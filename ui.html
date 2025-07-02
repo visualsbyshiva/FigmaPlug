@@ -436,8 +436,17 @@
     });
     document.getElementById('importSelectedBtn').addEventListener('click', function() {
       if (selectedProducts.size > 0) {
-        alert('Importing ' + selectedProducts.size + ' selected products...');
-        // Implement actual import logic here
+        // Gather selected products
+        const filtered = filterProducts(selectedCategory, selectedSubcategory);
+        const selected = filtered.filter(p => selectedProducts.has(p.id.toString()));
+        // Gather all products as a flat array (for fallback fill)
+        let allFlat = [];
+        for (const cat of Object.values(allProducts)) {
+          for (const sub of Object.values(cat)) {
+            if (Array.isArray(sub)) allFlat = allFlat.concat(sub);
+          }
+        }
+        parent.postMessage({ pluginMessage: { type: 'import', products: selected, allProducts: allFlat } }, '*');
       }
     });
 

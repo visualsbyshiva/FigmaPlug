@@ -39,11 +39,12 @@ function searchProducts(query: string): Product[] {
 }
 
 // Handle messages from UI
-figma.ui.onmessage = async (msg: { type: string; products?: any[] }) => {
+figma.ui.onmessage = async (msg: { type: string; products?: any[]; allProducts?: any[] }) => {
   if (msg.type === 'import') {
-    const products = msg.products || [];
-    if (products.length === 0) {
-      figma.notify('No products selected.');
+    const selectedProducts = msg.products || [];
+    const allProducts = msg.allProducts || [];
+    if (selectedProducts.length === 0 && allProducts.length === 0) {
+      figma.notify('No products available.');
       return;
     }
     // Find selected frame
@@ -53,50 +54,81 @@ figma.ui.onmessage = async (msg: { type: string; products?: any[] }) => {
       return;
     }
     const frame = selection[0] as FrameNode;
-    // Find image containers (rectangles or shapes with image fills)
-    const imageNodes: SceneNode[] = [];
-    const textNodes: TextNode[] = [];
-    function traverse(node: BaseNode) {
+    // Find all 'Product Card' frames (Frame or Auto Layout)
+    function findProductCards(node: BaseNode): FrameNode[] {
+      let cards: FrameNode[] = [];
+      if ((node.type === 'FRAME' || node.type === 'COMPONENT' || node.type === 'INSTANCE') && node.name === 'Product Card') {
+        cards.push(node as FrameNode);
+      }
       if ('children' in node) {
-        for (const child of node.children) traverse(child);
+        for (const child of node.children) {
+          cards = cards.concat(findProductCards(child));
+        }
       }
-      if (node.type === 'RECTANGLE' || node.type === 'ELLIPSE' || node.type === 'POLYGON' || node.type === 'VECTOR') {
-        imageNodes.push(node as SceneNode);
-      }
-      if (node.type === 'TEXT') {
-        textNodes.push(node as TextNode);
-      }
+      return cards;
     }
-    traverse(frame);
-    if (imageNodes.length === 0 || textNodes.length === 0) {
-      figma.notify('Frame must contain both image containers and text layers.');
+    const productCards = findProductCards(frame);
+    if (productCards.length === 0) {
+      figma.notify('No Product Card frames found in the selected frame.');
       return;
     }
-    // Fill in order: match product to image node and text node by index
-    const count = Math.min(products.length, imageNodes.length, textNodes.length);
-    for (let i = 0; i < count; i++) {
-      const product = products[i];
-      const imageNode = imageNodes[i];
-      const textNode = textNodes[i];
-      // Set image fill
-      try {
-        const imageBytes = await fetch(product.image_link).then(r => r.arrayBuffer());
-        const imageHash = figma.createImage(new Uint8Array(imageBytes)).hash;
-        if ('fills' in imageNode) {
-          const newFills: ImagePaint[] = [{ type: 'IMAGE', scaleMode: 'FILL', imageHash }];
-          imageNode.fills = newFills;
+    // Prepare product list to match number of cards
+    let productsToUse = [...selectedProducts];
+    let allFlat = allProducts.length ? allProducts : selectedProducts;
+    let idx = 0;
+    while (productsToUse.length < productCards.length) {
+      productsToUse.push(allFlat[idx % allFlat.length]);
+      idx++;
+      if (allFlat.length === 0) break;
+    }
+    // For each Product Card, find and replace image/text
+    let replacedCount = 0;
+    for (let i = 0; i < productCards.length; i++) {
+      const card = productCards[i];
+      const product = productsToUse[i];
+      // Find Image node named 'Product Image' and Text node named 'Product name'
+      let imageNode: SceneNode | null = null;
+      let textNode: TextNode | null = null;
+      function findNodes(node: BaseNode) {
+        if (node.type === 'RECTANGLE' || node.type === 'ELLIPSE' || node.type === 'POLYGON' || node.type === 'VECTOR') {
+          if (node.name === 'Product Image') imageNode = node as SceneNode;
         }
-      } catch (e) {
-        // Ignore image errors, continue
+        if (node.type === 'TEXT' && node.name === 'Product name') {
+          textNode = node as TextNode;
+        }
+        if ('children' in node) {
+          for (const child of node.children) findNodes(child);
+        }
       }
-      // Set text
-      try {
-        await figma.loadFontAsync(textNode.fontName as FontName);
-        textNode.characters = product.title;
-      } catch (e) {
-        // Ignore font errors, continue
+      findNodes(card);
+      if (imageNode && textNode && product) {
+        // Set image fill
+        try {
+          const imageBytes = await fetch(product.image_link).then(r => r.arrayBuffer());
+          const imageHash = figma.createImage(new Uint8Array(imageBytes)).hash;
+          if (imageNode && 'fills' in imageNode) {
+            const newFills: ImagePaint[] = [{ type: 'IMAGE', scaleMode: 'FILL', imageHash }];
+            (imageNode as GeometryMixin).fills = newFills;
+          }
+        } catch (e) {
+          // Ignore image errors, continue
+        }
+        // Set text
+        try {
+          if (textNode && 'fontName' in textNode && 'characters' in textNode) {
+            await figma.loadFontAsync((textNode as TextNode).fontName as FontName);
+            (textNode as TextNode).characters = product.title;
+          }
+        } catch (e) {
+          // Ignore font errors, continue
+        }
+        replacedCount++;
       }
     }
-    figma.notify(`Imported ${count} products to frame.`);
+    if (replacedCount === 0) {
+      figma.notify('No Product Cards with both Product Image and Product name found.');
+    } else {
+      figma.notify(`Imported ${replacedCount} products to Product Cards.`);
+    }
   }
 };
