@@ -1,0 +1,613 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Category Selection</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            width: 400px;
+            height: 600px;
+            background-color: #F8F8F8;
+            font-family: 'Roboto Mono', monospace;
+            overflow: hidden;
+        }
+
+        /* ===== CATEGORY SCREEN ===== */
+        .category-screen {
+            display: block;
+            width: 100%;
+            height: 100%;
+            padding: 24px 32px;
+            overflow-y: auto;
+        }
+
+        .category-screen.hidden {
+            display: none;
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 24px;
+        }
+
+        .header h1 {
+            font-size: 14px;
+            font-weight: 400;
+            color: #8B8B8B;
+            letter-spacing: 0.5px;
+            text-transform: uppercase;
+        }
+
+        .categories {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+
+        .category-item {
+            width: 100%;
+            background-color: #FFFFFF;
+            border: 1px solid #E5E5E5;
+            border-radius: 0;
+            cursor: pointer;
+            transition: all 0.2s ease;
+        }
+
+        .category-item:hover:not(.expanded) {
+            background-color: #1A1A1A;
+            border-color: #1A1A1A;
+        }
+
+        .category-item:hover:not(.expanded) .category-text {
+            color: #FFFFFF;
+        }
+
+        .category-item:hover:not(.expanded) .arrow-right::after {
+            border-right-color: #FFFFFF;
+            border-top-color: #FFFFFF;
+        }
+
+        .category-header {
+            height: 48px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 20px;
+        }
+
+        .category-item.expanded .category-header {
+            background-color: #1A1A1A;
+            color: #FFFFFF;
+        }
+
+        .category-text {
+            font-size: 16px;
+            font-weight: 500;
+            color: #1A1A1A;
+            letter-spacing: 0.2px;
+            transition: color 0.2s ease;
+        }
+
+        .category-item.expanded .category-text {
+            color: #FFFFFF;
+        }
+
+        .arrow {
+            width: 20px;
+            height: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .arrow-right::after {
+            content: '';
+            width: 8px;
+            height: 8px;
+            border-right: 2px solid #1A1A1A;
+            border-top: 2px solid #1A1A1A;
+            transform: rotate(45deg);
+            transition: border-color 0.2s ease;
+        }
+
+        .arrow-down::after {
+            content: '';
+            width: 8px;
+            height: 8px;
+            border-right: 2px solid #FFFFFF;
+            border-bottom: 2px solid #FFFFFF;
+            transform: rotate(45deg);
+        }
+
+        .subcategories {
+            display: none;
+            padding: 20px;
+            background-color: #F0F0F0;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+
+        .category-item.expanded .subcategories {
+            display: flex;
+        }
+
+        .subcategory-item {
+            padding: 10px 16px;
+            font-size: 12px;
+            font-weight: 500;
+            letter-spacing: 0.2px;
+            cursor: pointer;
+            transition: all 0.2s ease;
+            border: 1px solid #D0D0D0;
+            background-color: #FFFFFF;
+            color: #1A1A1A;
+        }
+
+        .subcategory-item:hover {
+            background-color: #F5F5F5;
+            border-color: #B0B0B0;
+        }
+
+        /* ===== LISTING SCREEN ===== */
+        .listing-screen {
+            display: none;
+            width: 100%;
+            height: 100%;
+            flex-direction: column;
+        }
+
+        .listing-screen.active {
+            display: flex;
+        }
+
+        .listing-header {
+            height: 80px;
+            display: flex;
+            align-items: center;
+            padding: 0 24px;
+            background-color: #F8F8F8;
+            border-bottom: 1px solid #E5E5E5;
+        }
+
+        .back-button {
+            width: 24px;
+            height: 24px;
+            cursor: pointer;
+            margin-right: 32px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .back-button::after {
+            content: '';
+            width: 12px;
+            height: 12px;
+            border-left: 2px solid #1A1A1A;
+            border-bottom: 2px solid #1A1A1A;
+            transform: rotate(45deg);
+        }
+
+        .breadcrumb {
+            font-size: 14px;
+            font-weight: 400;
+            color: #8B8B8B;
+            letter-spacing: 0.5px;
+            text-transform: uppercase;
+        }
+
+        .listing-content {
+            flex: 1;
+            padding: 24px;
+            overflow-y: auto;
+            padding-bottom: 100px;
+        }
+
+        .product-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 16px;
+        }
+
+        .product-item {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .product-image {
+            width: 100%;
+            height: 120px;
+            background-color: #D0D0D0;
+            position: relative;
+            margin-bottom: 8px;
+        }
+
+        .product-checkbox {
+            position: absolute;
+            top: 8px;
+            right: 8px;
+            width: 20px;
+            height: 20px;
+            border: 2px solid #1A1A1A;
+            background-color: #FFFFFF;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .product-checkbox.checked {
+            background-color: #1A1A1A;
+        }
+
+        .product-checkbox.checked::after {
+            content: '✓';
+            color: #FFFFFF;
+            font-size: 12px;
+            font-weight: bold;
+        }
+
+        .product-name {
+            font-size: 10px;
+            font-weight: 400;
+            color: #1A1A1A;
+            letter-spacing: 0.1px;
+            text-transform: uppercase;
+            line-height: 1.2;
+        }
+
+        .listing-bottom {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 80px;
+            background-color: #F8F8F8;
+            border-top: 1px solid #E5E5E5;
+            display: flex;
+            gap: 16px;
+            padding: 16px 24px;
+            align-items: center;
+        }
+
+        .cta-button {
+            flex: 1;
+            height: 48px;
+            border: 2px solid #1A1A1A;
+            font-family: 'Roboto Mono', monospace;
+            font-size: 12px;
+            font-weight: 500;
+            letter-spacing: 0.2px;
+            text-transform: uppercase;
+            cursor: pointer;
+            transition: all 0.2s ease;
+        }
+
+        .cta-button.secondary {
+            background-color: #FFFFFF;
+            color: #1A1A1A;
+        }
+
+        .cta-button.secondary:hover {
+            background-color: #F5F5F5;
+        }
+
+        .cta-button.primary {
+            background-color: #1A1A1A;
+            color: #FFFFFF;
+        }
+
+        .cta-button.primary:hover {
+            background-color: #333333;
+        }
+
+        .cta-button:disabled {
+            opacity: 0.5;
+            cursor: not-allowed;
+            background-color: #CCCCCC;
+            color: #888888;
+            border-color: #CCCCCC;
+        }
+
+        .cta-button:disabled:hover {
+            background-color: #CCCCCC;
+        }
+    </style>
+</head>
+<body>
+    <!-- CATEGORY SELECTION SCREEN -->
+    <div class="category-screen" id="categoryScreen">
+        <div class="header">
+            <h1>SELECT A CATEGORY</h1>
+        </div>
+        
+        <div class="categories">
+            <div class="category-item expanded" data-category="women">
+                <div class="category-header">
+                    <span class="category-text">WOMEN</span>
+                    <div class="arrow arrow-down"></div>
+                </div>
+                <div class="subcategories">
+                    <div class="subcategory-item" data-category-name="WOMEN" data-subcategory="CLOTHING">CLOTHING</div>
+                    <div class="subcategory-item" data-category-name="WOMEN" data-subcategory="FOOTWEAR">FOOTWEAR</div>
+                    <div class="subcategory-item" data-category-name="WOMEN" data-subcategory="ACCESSORIES">ACCESSORIES</div>
+                </div>
+            </div>
+            
+            <div class="category-item" data-category="men">
+                <div class="category-header">
+                    <span class="category-text">MEN</span>
+                    <div class="arrow arrow-right"></div>
+                </div>
+                <div class="subcategories">
+                    <div class="subcategory-item" data-category-name="MEN" data-subcategory="CLOTHING">CLOTHING</div>
+                    <div class="subcategory-item" data-category-name="MEN" data-subcategory="FOOTWEAR">FOOTWEAR</div>
+                    <div class="subcategory-item" data-category-name="MEN" data-subcategory="ACCESSORIES">ACCESSORIES</div>
+                </div>
+            </div>
+            
+            <div class="category-item" data-category="kids">
+                <div class="category-header">
+                    <span class="category-text">KIDS</span>
+                    <div class="arrow arrow-right"></div>
+                </div>
+                <div class="subcategories">
+                    <div class="subcategory-item" data-category-name="KIDS" data-subcategory="CLOTHING">CLOTHING</div>
+                    <div class="subcategory-item" data-category-name="KIDS" data-subcategory="FOOTWEAR">FOOTWEAR</div>
+                    <div class="subcategory-item" data-category-name="KIDS" data-subcategory="TOYS">TOYS</div>
+                </div>
+            </div>
+            
+            <div class="category-item" data-category="boys">
+                <div class="category-header">
+                    <span class="category-text">BOYS</span>
+                    <div class="arrow arrow-right"></div>
+                </div>
+                <div class="subcategories">
+                    <div class="subcategory-item" data-category-name="BOYS" data-subcategory="CLOTHING">CLOTHING</div>
+                    <div class="subcategory-item" data-category-name="BOYS" data-subcategory="FOOTWEAR">FOOTWEAR</div>
+                    <div class="subcategory-item" data-category-name="BOYS" data-subcategory="TOYS">TOYS</div>
+                </div>
+            </div>
+            
+            <div class="category-item" data-category="girls">
+                <div class="category-header">
+                    <span class="category-text">GIRLS</span>
+                    <div class="arrow arrow-right"></div>
+                </div>
+                <div class="subcategories">
+                    <div class="subcategory-item" data-category-name="GIRLS" data-subcategory="CLOTHING">CLOTHING</div>
+                    <div class="subcategory-item" data-category-name="GIRLS" data-subcategory="FOOTWEAR">FOOTWEAR</div>
+                    <div class="subcategory-item" data-category-name="GIRLS" data-subcategory="TOYS">TOYS</div>
+                </div>
+            </div>
+            
+            <div class="category-item" data-category="home">
+                <div class="category-header">
+                    <span class="category-text">HOME</span>
+                    <div class="arrow arrow-right"></div>
+                </div>
+                <div class="subcategories">
+                    <div class="subcategory-item" data-category-name="HOME" data-subcategory="FURNITURE">FURNITURE</div>
+                    <div class="subcategory-item" data-category-name="HOME" data-subcategory="DECOR">DECOR</div>
+                    <div class="subcategory-item" data-category-name="HOME" data-subcategory="KITCHEN">KITCHEN</div>
+                </div>
+            </div>
+            
+            <div class="category-item" data-category="beauty">
+                <div class="category-header">
+                    <span class="category-text">BEAUTY</span>
+                    <div class="arrow arrow-right"></div>
+                </div>
+                <div class="subcategories">
+                    <div class="subcategory-item" data-category-name="BEAUTY" data-subcategory="SKINCARE">SKINCARE</div>
+                    <div class="subcategory-item" data-category-name="BEAUTY" data-subcategory="MAKEUP">MAKEUP</div>
+                    <div class="subcategory-item" data-category-name="BEAUTY" data-subcategory="FRAGRANCE">FRAGRANCE</div>
+                </div>
+            </div>
+            
+            <div class="category-item" data-category="sports">
+                <div class="category-header">
+                    <span class="category-text">SPORTS</span>
+                    <div class="arrow arrow-right"></div>
+                </div>
+                <div class="subcategories">
+                    <div class="subcategory-item" data-category-name="SPORTS" data-subcategory="ACTIVEWEAR">ACTIVEWEAR</div>
+                    <div class="subcategory-item" data-category-name="SPORTS" data-subcategory="EQUIPMENT">EQUIPMENT</div>
+                    <div class="subcategory-item" data-category-name="SPORTS" data-subcategory="FOOTWEAR">FOOTWEAR</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- PRODUCT LISTING SCREEN -->
+    <div class="listing-screen" id="listingScreen">
+        <div class="listing-header">
+            <div class="back-button" id="backButton"></div>
+            <div class="breadcrumb" id="breadcrumb">WOMEN / CLOTHING</div>
+        </div>
+        
+        <div class="listing-content">
+            <div class="product-grid" id="productGrid">
+                <!-- Products will be generated by JavaScript -->
+            </div>
+        </div>
+        
+        <div class="listing-bottom">
+            <button class="cta-button secondary" id="selectRandomBtn">SELECT RANDOM</button>
+            <button class="cta-button primary" id="importSelectedBtn" disabled>IMPORT SELECTED</button>
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const categoryItems = document.querySelectorAll('.category-item');
+            const subcategoryItems = document.querySelectorAll('.subcategory-item');
+            const categoryScreen = document.getElementById('categoryScreen');
+            const listingScreen = document.getElementById('listingScreen');
+            const backButton = document.getElementById('backButton');
+            const breadcrumb = document.getElementById('breadcrumb');
+            const productGrid = document.getElementById('productGrid');
+            const selectRandomBtn = document.getElementById('selectRandomBtn');
+            const importSelectedBtn = document.getElementById('importSelectedBtn');
+
+            let selectedProducts = new Set();
+
+            // Sample product data
+            const products = [
+                '2XTREMZ ALL-OVER FLORAL PRINT DRESS',
+                '2XTREMZ ALL-OVER FLORAL PRINT DRESS',
+                '2XTREMZ ALL-OVER FLORAL PRINT DRESS',
+                '2XTREMZ ALL-OVER FLORAL PRINT DRESS',
+                '2XTREMZ ALL-OVER FLORAL PRINT DRESS',
+                '2XTREMZ ALL-OVER FLORAL PRINT DRESS',
+                '2XTREMZ ALL-OVER FLORAL PRINT DRESS',
+                '2XTREMZ ALL-OVER FLORAL PRINT DRESS',
+                '2XTREMZ ALL-OVER FLORAL PRINT DRESS',
+                '2XTREMZ ALL-OVER FLORAL PRINT DRESS',
+                '2XTREMZ ALL-OVER FLORAL PRINT DRESS',
+                '2XTREMZ ALL-OVER FLORAL PRINT DRESS'
+            ];
+
+            // Handle category expansion/collapse
+            categoryItems.forEach(function(item) {
+                const header = item.querySelector('.category-header');
+                header.addEventListener('click', function() {
+                    // Close all other categories
+                    categoryItems.forEach(function(otherItem) {
+                        if (otherItem !== item) {
+                            otherItem.classList.remove('expanded');
+                            const arrow = otherItem.querySelector('.arrow');
+                            arrow.className = 'arrow arrow-right';
+                        }
+                    });
+
+                    // Toggle current category
+                    item.classList.toggle('expanded');
+                    const arrow = item.querySelector('.arrow');
+                    if (item.classList.contains('expanded')) {
+                        arrow.className = 'arrow arrow-down';
+                    } else {
+                        arrow.className = 'arrow arrow-right';
+                    }
+                });
+            });
+
+            // Handle subcategory selection - Navigate to listing screen
+            subcategoryItems.forEach(function(item) {
+                item.addEventListener('click', function(e) {
+                    e.stopPropagation();
+                    
+                    const categoryName = item.getAttribute('data-category-name');
+                    const subcategoryName = item.getAttribute('data-subcategory');
+                    
+                    // Update breadcrumb
+                    breadcrumb.textContent = categoryName + ' / ' + subcategoryName;
+                    
+                    // Generate products
+                    generateProducts();
+                    
+                    // Clear selections
+                    selectedProducts.clear();
+                    updateImportButton();
+                    
+                    // COMPLETELY SWITCH SCREENS
+                    categoryScreen.classList.add('hidden');
+                    listingScreen.classList.add('active');
+                });
+            });
+
+            // Back button - Return to category screen
+            backButton.addEventListener('click', function() {
+                // COMPLETELY SWITCH SCREENS
+                listingScreen.classList.remove('active');
+                categoryScreen.classList.remove('hidden');
+                
+                // Clear selections
+                selectedProducts.clear();
+                updateImportButton();
+            });
+
+            // Generate product grid
+            function generateProducts() {
+                productGrid.innerHTML = '';
+                products.forEach(function(product, index) {
+                    const productItem = document.createElement('div');
+                    productItem.className = 'product-item';
+                    productItem.innerHTML = '<div class="product-image"><div class="product-checkbox" data-product-id="' + index + '"></div></div><div class="product-name">' + product + '</div>';
+                    productGrid.appendChild(productItem);
+                });
+
+                // Add checkbox event listeners
+                const checkboxes = document.querySelectorAll('.product-checkbox');
+                checkboxes.forEach(function(checkbox) {
+                    checkbox.addEventListener('click', function(e) {
+                        e.stopPropagation();
+                        const productId = this.getAttribute('data-product-id');
+                        
+                        if (selectedProducts.has(productId)) {
+                            selectedProducts.delete(productId);
+                            this.classList.remove('checked');
+                        } else {
+                            selectedProducts.add(productId);
+                            this.classList.add('checked');
+                        }
+                        
+                        updateImportButton();
+                    });
+                });
+            }
+
+            // Update import button state
+            function updateImportButton() {
+                if (selectedProducts.size > 0) {
+                    importSelectedBtn.disabled = false;
+                } else {
+                    importSelectedBtn.disabled = true;
+                }
+            }
+
+            // Select random functionality
+            selectRandomBtn.addEventListener('click', function() {
+                // Clear current selections
+                selectedProducts.clear();
+                document.querySelectorAll('.product-checkbox').forEach(function(cb) {
+                    cb.classList.remove('checked');
+                });
+                
+                // Select 3-5 random products
+                const randomCount = Math.floor(Math.random() * 3) + 3;
+                const availableProducts = [];
+                for (let i = 0; i < products.length; i++) {
+                    availableProducts.push(i);
+                }
+                
+                for (let i = 0; i < randomCount; i++) {
+                    const randomIndex = Math.floor(Math.random() * availableProducts.length);
+                    const productId = availableProducts.splice(randomIndex, 1)[0];
+                    selectedProducts.add(productId.toString());
+                    document.querySelector('[data-product-id="' + productId + '"]').classList.add('checked');
+                }
+                
+                updateImportButton();
+            });
+
+            // Import selected functionality
+            importSelectedBtn.addEventListener('click', function() {
+                if (selectedProducts.size > 0) {
+                    alert('Importing ' + selectedProducts.size + ' selected products...');
+                    // Here you would implement the actual import functionality
+                }
+            });
+        });
+    </script>
+</body>
+</html>

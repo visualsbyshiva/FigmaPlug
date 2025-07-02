@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Category Selection</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      width: 400px;
+      height: 600px;
+      background-color: #F8F8F8;
+      font-family: 'Roboto Mono', monospace;
+      overflow: hidden;
+    }
+    .category-screen {
+      display: block;
+      width: 100%;
+      height: 100%;
+      padding: 24px 32px;
+      overflow-y: auto;
+    }
+    .category-screen.hidden { display: none; }
+    .header { text-align: center; margin-bottom: 24px; }
+    .header h1 {
+      font-size: 14px;
+      font-weight: 400;
+      color: #8B8B8B;
+      letter-spacing: 0.5px;
+      text-transform: uppercase;
+    }
+    .categories {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+    .category-item {
+      width: 100%;
+      background-color: #FFFFFF;
+      border: 1px solid #E5E5E5;
+      border-radius: 0;
+      cursor: pointer;
+      transition: all 0.2s ease;
+    }
+    .category-item:hover:not(.expanded) {
+      background-color: #1A1A1A;
+      border-color: #1A1A1A;
+    }
+    .category-item:hover:not(.expanded) .category-text { color: #FFFFFF; }
+    .category-item:hover:not(.expanded) .arrow-right::after {
+      border-right-color: #FFFFFF;
+      border-top-color: #FFFFFF;
+    }
+    .category-header {
+      height: 48px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 20px;
+    }
+    .category-item.expanded .category-header {
+      background-color: #1A1A1A;
+      color: #FFFFFF;
+    }
+    .category-text {
+      font-size: 16px;
+      font-weight: 500;
+      color: #1A1A1A;
+      letter-spacing: 0.2px;
+      transition: color 0.2s ease;
+    }
+    .category-item.expanded .category-text { color: #FFFFFF; }
+    .arrow {
+      width: 20px;
+      height: 20px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .arrow-right::after {
+      content: '';
+      width: 8px;
+      height: 8px;
+      border-right: 2px solid #1A1A1A;
+      border-top: 2px solid #1A1A1A;
+      transform: rotate(45deg);
+      transition: border-color 0.2s ease;
+    }
+    .arrow-down::after {
+      content: '';
+      width: 8px;
+      height: 8px;
+      border-right: 2px solid #FFFFFF;
+      border-bottom: 2px solid #FFFFFF;
+      transform: rotate(45deg);
+    }
+    .subcategories {
+      display: none;
+      padding: 20px;
+      background-color: #F0F0F0;
+      gap: 10px;
+      flex-wrap: wrap;
+    }
+    .category-item.expanded .subcategories { display: flex; }
+    .subcategory-item {
+      padding: 10px 16px;
+      font-size: 12px;
+      font-weight: 500;
+      letter-spacing: 0.2px;
+      cursor: pointer;
+      transition: all 0.2s ease;
+      border: 1px solid #D0D0D0;
+      background-color: #FFFFFF;
+      color: #1A1A1A;
+    }
+    .subcategory-item.selected, .subcategory-item.active {
+      background-color: #1A1A1A;
+      color: #FFFFFF;
+      border-color: #1A1A1A;
+    }
+    .subcategory-item:hover {
+      background-color: #F5F5F5;
+      border-color: #B0B0B0;
+    }
+    .listing-screen {
+      display: none;
+      width: 100%;
+      height: 100%;
+      flex-direction: column;
+    }
+    .listing-screen.active { display: flex; }
+    .listing-header {
+      height: 80px;
+      display: flex;
+      align-items: center;
+      padding: 0 24px;
+      background-color: #F8F8F8;
+      border-bottom: 1px solid #E5E5E5;
+    }
+    .back-button {
+      width: 24px;
+      height: 24px;
+      cursor: pointer;
+      margin-right: 32px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .back-button::after {
+      content: '';
+      width: 12px;
+      height: 12px;
+      border-left: 2px solid #1A1A1A;
+      border-bottom: 2px solid #1A1A1A;
+      transform: rotate(45deg);
+    }
+    .breadcrumb {
+      font-size: 14px;
+      font-weight: 400;
+      color: #8B8B8B;
+      letter-spacing: 0.5px;
+      text-transform: uppercase;
+    }
+    .listing-content {
+      flex: 1;
+      padding: 24px;
+      overflow-y: auto;
+      padding-bottom: 100px;
+    }
+    .product-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 16px;
+    }
+    .product-item {
+      display: flex;
+      flex-direction: column;
+    }
+    .product-image {
+      width: 100%;
+      height: 120px;
+      background-color: #D0D0D0;
+      position: relative;
+      margin-bottom: 8px;
+    }
+    .product-checkbox {
+      position: absolute;
+      top: 8px;
+      right: 8px;
+      width: 20px;
+      height: 20px;
+      border: 2px solid #1A1A1A;
+      background-color: #FFFFFF;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .product-checkbox.checked { background-color: #1A1A1A; }
+    .product-checkbox.checked::after {
+      content: '✓';
+      color: #FFFFFF;
+      font-size: 12px;
+      font-weight: bold;
+    }
+    .product-name {
+      font-size: 10px;
+      font-weight: 400;
+      color: #1A1A1A;
+      letter-spacing: 0.1px;
+      text-transform: uppercase;
+      line-height: 1.2;
+    }
+    .listing-bottom {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 80px;
+      background-color: #F8F8F8;
+      border-top: 1px solid #E5E5E5;
+      display: flex;
+      gap: 16px;
+      padding: 16px 24px;
+      align-items: center;
+    }
+    .cta-button {
+      flex: 1;
+      height: 48px;
+      border: 2px solid #1A1A1A;
+      font-family: 'Roboto Mono', monospace;
+      font-size: 12px;
+      font-weight: 500;
+      letter-spacing: 0.2px;
+      text-transform: uppercase;
+      cursor: pointer;
+      transition: all 0.2s ease;
+    }
+    .cta-button.secondary {
+      background-color: #FFFFFF;
+      color: #1A1A1A;
+    }
+    .cta-button.secondary:hover { background-color: #F5F5F5; }
+    .cta-button.primary {
+      background-color: #1A1A1A;
+      color: #FFFFFF;
+    }
+    .cta-button.primary:hover { background-color: #333333; }
+    .cta-button:disabled {
+      opacity: 0.5;
+      cursor: not-allowed;
+      background-color: #CCCCCC;
+      color: #888888;
+      border-color: #CCCCCC;
+    }
+    .cta-button:disabled:hover { background-color: #CCCCCC; }
+  </style>
+</head>
+<body>
+  <!-- CATEGORY SELECTION SCREEN -->
+  <div class="category-screen" id="categoryScreen">
+    <div class="header">
+      <h1>SELECT A CATEGORY</h1>
+    </div>
+    <div class="categories" id="categories"></div>
+  </div>
+  <!-- PRODUCT LISTING SCREEN -->
+  <div class="listing-screen" id="listingScreen">
+    <div class="listing-header">
+      <div class="back-button" id="backButton"></div>
+      <div class="breadcrumb" id="breadcrumb"></div>
+    </div>
+    <div class="listing-content">
+      <div class="product-grid" id="productGrid"></div>
+    </div>
+    <div class="listing-bottom">
+      <button class="cta-button secondary" id="selectRandomBtn">SELECT RANDOM</button>
+      <button class="cta-button primary" id="importSelectedBtn" disabled>IMPORT SELECTED</button>
+    </div>
+  </div>
+  <script>
+    let allProducts = [];
+    const categoriesData = [
+      { name: 'WOMEN', subcategories: ['CLOTHING', 'FOOTWEAR', 'ACCESSORIES'] },
+      { name: 'MEN', subcategories: ['CLOTHING', 'FOOTWEAR', 'ACCESSORIES'] },
+      { name: 'KIDS', subcategories: ['CLOTHING', 'FOOTWEAR', 'TOYS'] },
+      { name: 'BOYS', subcategories: ['CLOTHING', 'FOOTWEAR', 'TOYS'] },
+      { name: 'GIRLS', subcategories: ['CLOTHING', 'FOOTWEAR', 'TOYS'] },
+      { name: 'HOME', subcategories: ['FURNITURE', 'DECOR', 'KITCHEN'] },
+      { name: 'BEAUTY', subcategories: ['SKINCARE', 'MAKEUP', 'FRAGRANCE'] },
+      { name: 'SPORTS', subcategories: ['ACTIVEWEAR', 'EQUIPMENT', 'FOOTWEAR'] },
+    ];
+    let selectedProducts = new Set();
+    let selectedCategory = null;
+    let selectedSubcategory = null;
+
+    function renderCategories() {
+      const categoriesEl = document.getElementById('categories');
+      categoriesEl.innerHTML = '';
+      categoriesData.forEach((cat) => {
+        const catDiv = document.createElement('div');
+        catDiv.className = 'category-item'; // No default expanded
+        catDiv.setAttribute('data-category', cat.name);
+        catDiv.innerHTML = `
+          <div class="category-header">
+            <span class="category-text">${cat.name}</span>
+            <div class="arrow arrow-right"></div>
+          </div>
+          <div class="subcategories">
+            ${cat.subcategories.map((sub) => `<div class="subcategory-item" data-category-name="${cat.name}" data-subcategory="${sub}">${sub}</div>`).join('')}
+          </div>
+        `;
+        categoriesEl.appendChild(catDiv);
+      });
+    }
+
+    function setupCategoryHandlers() {
+      const categoriesEl = document.getElementById('categories');
+      categoriesEl.querySelectorAll('.category-item').forEach(item => {
+        const header = item.querySelector('.category-header');
+        header.addEventListener('click', function() {
+          categoriesEl.querySelectorAll('.category-item').forEach(other => {
+            if (other !== item) {
+              other.classList.remove('expanded');
+              other.querySelector('.arrow').className = 'arrow arrow-right';
+            }
+          });
+          item.classList.toggle('expanded');
+          const arrow = item.querySelector('.arrow');
+          if (item.classList.contains('expanded')) {
+            arrow.className = 'arrow arrow-down';
+          } else {
+            arrow.className = 'arrow arrow-right';
+          }
+        });
+        item.querySelectorAll('.subcategory-item').forEach(sub => {
+          sub.addEventListener('click', function(e) {
+            e.stopPropagation();
+            item.querySelectorAll('.subcategory-item').forEach(sib => sib.classList.remove('selected'));
+            sub.classList.add('selected');
+            selectedCategory = sub.getAttribute('data-category-name');
+            selectedSubcategory = sub.getAttribute('data-subcategory');
+            document.getElementById('categoryScreen').classList.add('hidden');
+            document.getElementById('listingScreen').classList.add('active');
+            document.getElementById('breadcrumb').textContent = `${selectedCategory} / ${selectedSubcategory}`;
+            renderProducts();
+            selectedProducts.clear();
+            updateImportButton();
+          });
+        });
+      });
+    }
+
+    function filterProducts(category, subcategory) {
+      // Use nested JSON structure from Supabase
+      if (!allProducts || typeof allProducts !== 'object') return [];
+      const catKey = Object.keys(allProducts).find(k => k.toLowerCase() === category.toLowerCase());
+      if (!catKey) return [];
+      const subKey = Object.keys(allProducts[catKey]).find(k => k.toLowerCase() === subcategory.toLowerCase());
+      if (!subKey) return [];
+      const products = allProducts[catKey][subKey];
+      return Array.isArray(products) ? products : [];
+    }
+
+    function renderProducts() {
+      const grid = document.getElementById('productGrid');
+      grid.innerHTML = '';
+      const filtered = filterProducts(selectedCategory, selectedSubcategory);
+      if (!filtered.length) {
+        grid.innerHTML = '<div style="grid-column: span 3; text-align: center; color: #aaa; font-size: 14px;">No products found.</div>';
+        return;
+      }
+      filtered.forEach((product) => {
+        const item = document.createElement('div');
+        item.className = 'product-item';
+        item.innerHTML = `
+          <div class="product-image" style="background-image:url('${product.image_link}'); background-size:cover; background-position:center;">
+            <div class="product-checkbox" data-product-id="${product.id}"></div>
+          </div>
+          <div class="product-name">${product.title}</div>
+        `;
+        grid.appendChild(item);
+      });
+      grid.querySelectorAll('.product-checkbox').forEach(cb => {
+        cb.addEventListener('click', function(e) {
+          e.stopPropagation();
+          const productId = this.getAttribute('data-product-id');
+          if (selectedProducts.has(productId)) {
+            selectedProducts.delete(productId);
+            this.classList.remove('checked');
+          } else {
+            selectedProducts.add(productId);
+            this.classList.add('checked');
+          }
+          updateImportButton();
+        });
+      });
+    }
+
+    function updateImportButton() {
+      const btn = document.getElementById('importSelectedBtn');
+      btn.disabled = selectedProducts.size === 0;
+    }
+
+    document.getElementById('backButton').addEventListener('click', function() {
+      document.getElementById('listingScreen').classList.remove('active');
+      document.getElementById('categoryScreen').classList.remove('hidden');
+      selectedProducts.clear();
+      updateImportButton();
+    });
+    document.getElementById('selectRandomBtn').addEventListener('click', function() {
+      selectedProducts.clear();
+      document.querySelectorAll('.product-checkbox').forEach(cb => cb.classList.remove('checked'));
+      const filtered = filterProducts(selectedCategory, selectedSubcategory);
+      const randomCount = Math.min(filtered.length, Math.floor(Math.random() * 3) + 3);
+      const available = filtered.map(p => p.id);
+      for (let i = 0; i < randomCount; i++) {
+        const idx = Math.floor(Math.random() * available.length);
+        const productId = available.splice(idx, 1)[0];
+        selectedProducts.add(productId.toString());
+        document.querySelector(`[data-product-id="${productId}"]`).classList.add('checked');
+      }
+      updateImportButton();
+    });
+    document.getElementById('importSelectedBtn').addEventListener('click', function() {
+      if (selectedProducts.size > 0) {
+        alert('Importing ' + selectedProducts.size + ' selected products...');
+        // Implement actual import logic here
+      }
+    });
+
+    // Load product data and initialize
+    fetch('https://vkjltkcyjsmhffnqoifp.supabase.co/storage/v1/object/sign/cdn/minor_cp_kw.json?token=eyJraWQiOiJzdG9yYWdlLXVybC1zaWduaW5nLWtleV85NTJiY2FhMC1iYTMzLTQxZjktOWU3OC0wMTBkZDZlZDA3MzIiLCJhbGciOiJIUzI1NiJ9.eyJ1cmwiOiJjZG4vbWlub3JfY3Bfa3cuanNvbiIsImlhdCI6MTc1MTM2MTAxNSwiZXhwIjoxNzY0MzIxMDE1fQ.vdbI_cNCV7GaGwz5tWuhpCH4i0DqQ4LOx3aUg6Zf2ME')
+      .then(res => res.json())
+      .then(data => {
+        allProducts = data;
+        renderCategories();
+        setupCategoryHandlers();
+      })
+      .catch(err => {
+        // Always render categories even if fetch fails
+        renderCategories();
+        setupCategoryHandlers();
+      });
+  </script>
+</body>
+</html>
