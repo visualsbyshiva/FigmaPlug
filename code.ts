@@ -1,5 +1,5 @@
 import productData from './minor_cp_kw.json';
-figma.showUI(__html__, { width: 400, height: 800 });
+figma.showUI(__html__, { width: 400, height: 700 });
 
 // Node name constants - easily configurable
 const NODE_NAMES = {
