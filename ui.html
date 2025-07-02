@@ -225,6 +225,9 @@
       padding: 16px 24px;
       align-items: center;
     }
+    .listing-bottom.single-button {
+      gap: 0;
+    }
     .cta-button {
       flex: 1;
       height: 48px;
@@ -255,6 +258,7 @@
       border-color: #CCCCCC;
     }
     .cta-button:disabled:hover { background-color: #CCCCCC; }
+    .cta-button.hidden { display: none; }
   </style>
 </head>
 <body>
@@ -274,9 +278,9 @@
     <div class="listing-content">
       <div class="product-grid" id="productGrid"></div>
     </div>
-    <div class="listing-bottom">
+    <div class="listing-bottom single-button">
       <button class="cta-button secondary" id="selectRandomBtn">SELECT RANDOM</button>
-      <button class="cta-button primary" id="importSelectedBtn" disabled>IMPORT SELECTED</button>
+      <button class="cta-button primary hidden" id="importSelectedBtn" disabled>IMPORT SELECTED</button>
     </div>
   </div>
   <script>
@@ -410,8 +414,20 @@
     }
 
     function updateImportButton() {
-      const btn = document.getElementById('importSelectedBtn');
-      btn.disabled = selectedProducts.size === 0;
+      const importBtn = document.getElementById('importSelectedBtn');
+      const randomBtn = document.getElementById('selectRandomBtn');
+      const bottomContainer = document.querySelector('.listing-bottom');
+      
+      if (selectedProducts.size > 0) {
+        // Show both buttons when products are selected
+        importBtn.classList.remove('hidden');
+        importBtn.disabled = false;
+        bottomContainer.classList.remove('single-button');
+      } else {
+        // Hide import button and make random button full width when no products selected
+        importBtn.classList.add('hidden');
+        bottomContainer.classList.add('single-button');
+      }
     }
 
     document.getElementById('backButton').addEventListener('click', function() {
@@ -421,18 +437,9 @@
       updateImportButton();
     });
     document.getElementById('selectRandomBtn').addEventListener('click', function() {
-      selectedProducts.clear();
-      document.querySelectorAll('.product-checkbox').forEach(cb => cb.classList.remove('checked'));
+      // Use the currently filtered products (from the visible listing)
       const filtered = filterProducts(selectedCategory, selectedSubcategory);
-      const randomCount = Math.min(filtered.length, Math.floor(Math.random() * 3) + 3);
-      const available = filtered.map(p => p.id);
-      for (let i = 0; i < randomCount; i++) {
-        const idx = Math.floor(Math.random() * available.length);
-        const productId = available.splice(idx, 1)[0];
-        selectedProducts.add(productId.toString());
-        document.querySelector(`[data-product-id="${productId}"]`).classList.add('checked');
-      }
-      updateImportButton();
+      parent.postMessage({ pluginMessage: { type: 'selectRandom', allProducts: filtered } }, '*');
     });
     document.getElementById('importSelectedBtn').addEventListener('click', function() {
       if (selectedProducts.size > 0) {
