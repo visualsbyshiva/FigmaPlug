@@ -200,4 +200,34 @@ console.log(`Converted ${input} to ${output} in nested category format (max 50 p
 // Write first 100 records to test_data.json
 const testData = data.slice(0, 100);
 fs.writeFileSync(testOutput, JSON.stringify(testData, null, 2));
-console.log(`Wrote first 100 records to ${testOutput}.`); 
+console.log(`Wrote first 100 records to ${testOutput}.`);
+
+// === CAP SUBCATEGORIES TO 40 PRODUCTS EACH ===
+if (require.main === module) {
+  const inputFile = 'minor_cp_kw.json';
+  const outputFile = 'minor_cp_kw_capped.json';
+  const structure = {
+    Women: ['Clothing', 'Footwear', 'Accessories'],
+    Men: ['Clothing', 'Footwear', 'Accessories'],
+    Kids: ['Clothing', 'Footwear', 'Toys & Games'],
+    Girls: ['Clothing', 'Footwear', 'Accessories'],
+    Boys: ['Clothing', 'Footwear', 'Accessories'],
+    Home: ['Furniture', 'Furnishings', 'Décor', 'Kitchen & Dining'],
+    Beauty: ['Makeup', 'Skincare', 'Haircare', 'Fragrance'],
+    Sports: ['Sportswear', 'Footwear', 'Equipment'],
+  };
+  const data = JSON.parse(fs.readFileSync(inputFile, 'utf8'));
+  const capped = {};
+  for (const cat in structure) {
+    capped[cat] = {};
+    for (const sub of structure[cat]) {
+      if (data[cat] && Array.isArray(data[cat][sub])) {
+        capped[cat][sub] = data[cat][sub].slice(0, 40);
+      } else {
+        capped[cat][sub] = [];
+      }
+    }
+  }
+  fs.writeFileSync(outputFile, JSON.stringify(capped, null, 2));
+  console.log('Capped JSON written to', outputFile);
+} 

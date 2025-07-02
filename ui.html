@@ -298,9 +298,20 @@
     function renderCategories() {
       const categoriesEl = document.getElementById('categories');
       categoriesEl.innerHTML = '';
+      if (!allProducts || typeof allProducts !== 'object') return;
       categoriesData.forEach((cat) => {
+        const catKey = Object.keys(allProducts).find(k => k.toLowerCase() === cat.name.toLowerCase());
+        if (!catKey) return; // skip if category not in data
+        // Only include subcategories with at least 1 product
+        const validSubs = cat.subcategories.filter(sub => {
+          const subKey = Object.keys(allProducts[catKey]).find(k => k.toLowerCase() === sub.toLowerCase());
+          if (!subKey) return false;
+          const products = allProducts[catKey][subKey];
+          return Array.isArray(products) && products.length > 0;
+        });
+        if (validSubs.length === 0) return; // skip category if no valid subcategories
         const catDiv = document.createElement('div');
-        catDiv.className = 'category-item'; // No default expanded
+        catDiv.className = 'category-item';
         catDiv.setAttribute('data-category', cat.name);
         catDiv.innerHTML = `
           <div class="category-header">
@@ -308,7 +319,7 @@
             <div class="arrow arrow-right"></div>
           </div>
           <div class="subcategories">
-            ${cat.subcategories.map((sub) => `<div class="subcategory-item" data-category-name="${cat.name}" data-subcategory="${sub}">${sub}</div>`).join('')}
+            ${validSubs.map((sub) => `<div class="subcategory-item" data-category-name="${cat.name}" data-subcategory="${sub}">${sub}</div>`).join('')}
           </div>
         `;
         categoriesEl.appendChild(catDiv);
@@ -431,7 +442,7 @@
     });
 
     // Load product data and initialize
-    fetch('https://vkjltkcyjsmhffnqoifp.supabase.co/storage/v1/object/sign/cdn/minor_cp_kw.json?token=eyJraWQiOiJzdG9yYWdlLXVybC1zaWduaW5nLWtleV85NTJiY2FhMC1iYTMzLTQxZjktOWU3OC0wMTBkZDZlZDA3MzIiLCJhbGciOiJIUzI1NiJ9.eyJ1cmwiOiJjZG4vbWlub3JfY3Bfa3cuanNvbiIsImlhdCI6MTc1MTM2MTAxNSwiZXhwIjoxNzY0MzIxMDE1fQ.vdbI_cNCV7GaGwz5tWuhpCH4i0DqQ4LOx3aUg6Zf2ME')
+    fetch('https://vkjltkcyjsmhffnqoifp.supabase.co/storage/v1/object/sign/cdn/minor_cp_kw.json?token=eyJraWQiOiJzdG9yYWdlLXVybC1zaWduaW5nLWtleV85NTJiY2FhMC1iYTMzLTQxZjktOWU3OC0wMTBkZDZlZDA3MzIiLCJhbGciOiJIUzI1NiJ9.eyJ1cmwiOiJjZG4vbWlub3JfY3Bfa3cuanNvbiIsImlhdCI6MTc1MTQ1ODI4MiwiZXhwIjoxNzY3MDEwMjgyfQ.ykUhq1o9BlBwNpLl2D-1_WDvJm_ch5xZid3cS52cjyc')
       .then(res => res.json())
       .then(data => {
         allProducts = data;

@@ -378,6 +378,102 @@
         "department": "Women",
         "material": "Cotton",
         "product_type": "women-clothing-sportswearandactivewear-tshirtsandvests"
+      },
+      {
+        "id": 4015822,
+        "image_link": "https://media.centrepointstores.com/i/centrepoint/4015822-HQ153661-SPWIN24160424_01-2100.jpg",
+        "title": "Kappa Logo Print T-shirt with Crew Neck and Short Sleeves",
+        "typeEn": "Tshirts & Vests",
+        "brand": "Kappa",
+        "department": "Women",
+        "material": "Cotton",
+        "product_type": "women-clothing-sportswearandactivewear-tshirtsandvests"
+      },
+      {
+        "id": 4015824,
+        "image_link": "https://media.centrepointstores.com/i/centrepoint/4015824-HQ153661-SPWIN24160424_01-2100.jpg",
+        "title": "Kappa Logo Print T-shirt with Crew Neck and Short Sleeves",
+        "typeEn": "Tshirts & Vests",
+        "brand": "Kappa",
+        "department": "Women",
+        "material": "Cotton",
+        "product_type": "women-clothing-sportswearandactivewear-tshirtsandvests"
+      },
+      {
+        "id": 4015826,
+        "image_link": "https://media.centrepointstores.com/i/centrepoint/4015826-HQ153661-SPWIN24160424_01-2100.jpg",
+        "title": "Kappa Logo Print T-shirt with Crew Neck and Short Sleeves",
+        "typeEn": "Tshirts & Vests",
+        "brand": "Kappa",
+        "department": "Women",
+        "material": "Cotton",
+        "product_type": "women-clothing-sportswearandactivewear-tshirtsandvests"
+      },
+      {
+        "id": 4015829,
+        "image_link": "https://media.centrepointstores.com/i/centrepoint/4015829-HQ153661-SPWIN24160424_01-2100.jpg",
+        "title": "Kappa Logo Print T-shirt with Crew Neck and Short Sleeves",
+        "typeEn": "Tshirts & Vests",
+        "brand": "Kappa",
+        "department": "Women",
+        "material": "Cotton",
+        "product_type": "women-clothing-sportswearandactivewear-tshirtsandvests"
+      },
+      {
+        "id": 5547869,
+        "image_link": "https://media.centrepointstores.com/i/centrepoint/5547869-HQ154899-SPWIN24040524_01-2100.jpg",
+        "title": "Striped High Low Shirt Dress with Long Sleeves and Tie-Up Belt",
+        "typeEn": "Dresses",
+        "brand": "Splash",
+        "department": "Women",
+        "material": "Cotton",
+        "product_type": "women-clothing-dresses"
+      },
+      {
+        "id": 5547870,
+        "image_link": "https://media.centrepointstores.com/i/centrepoint/5547870-HQ154899-SPWIN24040524_01-2100.jpg?v=1",
+        "title": "Striped High Low Shirt Dress with Long Sleeves and Tie-Up Belt",
+        "typeEn": "Dresses",
+        "brand": "Splash",
+        "department": "Women",
+        "material": "Cotton",
+        "product_type": "women-clothing-dresses"
+      },
+      {
+        "id": 2095534,
+        "image_link": "https://media.centrepointstores.com/i/centrepoint/2095534-HQ153537-SPWIN24140524_01-2100.jpg",
+        "title": "Iconic Textured Kaftan Dress with V-neck and Drape Detail",
+        "typeEn": "Dresses",
+        "brand": "Iconic",
+        "department": "Women",
+        "product_type": "women-clothing-dresses"
+      },
+      {
+        "id": 2095535,
+        "image_link": "https://media.centrepointstores.com/i/centrepoint/2095535-HQ153537-SPWIN24140524_01-2100.jpg",
+        "title": "Iconic Textured Kaftan Dress with V-neck and Drape Detail",
+        "typeEn": "Dresses",
+        "brand": "Iconic",
+        "department": "Women",
+        "product_type": "women-clothing-dresses"
+      },
+      {
+        "id": 3414550,
+        "image_link": "https://media.centrepointstores.com/i/centrepoint/3414550-HQ145930-SP24061223_01-2100.jpg",
+        "title": "Denim Palazzo Pants with Drawstring Waistband and Pockets",
+        "typeEn": "Jeans",
+        "brand": "Splash",
+        "department": "Women",
+        "product_type": "women-clothing-bottoms-jeans"
+      },
+      {
+        "id": 3414549,
+        "image_link": "https://media.centrepointstores.com/i/centrepoint/3414549-HQ145930-SP24061223_01-2100.jpg",
+        "title": "Denim Palazzo Pants with Drawstring Waistband and Pockets",
+        "typeEn": "Jeans",
+        "brand": "Splash",
+        "department": "Women",
+        "product_type": "women-clothing-bottoms-jeans"
       }
     ],
     "Footwear": [
@@ -728,6 +824,86 @@
         "id": "136408-MVE",
         "image_link": "https://media.centrepointstores.com/i/centrepoint/136408-MVE-136408CP08012024_01-2100.jpg?v=1",
         "title": "Skechers On-The-Go Flex Women Air Cooled Goga Mat Walking Shoes 136408-LTGY | OE",
+        "typeEn": "Sport Shoes",
+        "brand": "Skechers",
+        "product_type": "women-shoes-sports"
+      },
+      {
+        "id": "124640-BBK",
+        "image_link": "https://media.centrepointstores.com/i/centrepoint/124640-BBK-124640CP08012024_01-2100.jpg",
+        "title": "Skechers Go Walk Joy Women Memory Foam Walking Shoes 124640-NTPR | OE",
+        "typeEn": "Sport Shoes",
+        "brand": "Skechers",
+        "product_type": "women-shoes-sports"
+      },
+      {
+        "id": "124640-NTPR",
+        "image_link": "https://media.centrepointstores.com/i/centrepoint/124640-NTPR-124640CP08012024_01-2100.jpg?v=1",
+        "title": "Skechers Go Walk Joy Women Memory Foam Walking Shoes 124640-NTPR | OE",
+        "typeEn": "Sport Shoes",
+        "brand": "Skechers",
+        "product_type": "women-shoes-sports"
+      },
+      {
+        "id": "124640-NVPK",
+        "image_link": "https://media.centrepointstores.com/i/centrepoint/124640-NVPK-124640CP08012024_01-2100.jpg",
+        "title": "Skechers Go Walk Joy Women Memory Foam Walking Shoes 124640-NTPR | OE",
+        "typeEn": "Sport Shoes",
+        "brand": "Skechers",
+        "product_type": "women-shoes-sports"
+      },
+      {
+        "id": "124640-BKMN",
+        "image_link": "https://media.centrepointstores.com/i/centrepoint/124640-BKMN-124640CP08012024_01-2100.jpg?v=1",
+        "title": "Skechers Go Walk Joy Women Memory Foam Walking Shoes 124640-NTPR | OE",
+        "typeEn": "Sport Shoes",
+        "brand": "Skechers",
+        "product_type": "women-shoes-sports"
+      },
+      {
+        "id": "124640-GYBL",
+        "image_link": "https://media.centrepointstores.com/i/centrepoint/124640-GYBL-124640CP08012024_01-2100.jpg",
+        "title": "Skechers Go Walk Joy Women Memory Foam Walking Shoes 124640-NTPR | OE",
+        "typeEn": "Sport Shoes",
+        "brand": "Skechers",
+        "product_type": "women-shoes-sports"
+      },
+      {
+        "id": "125315-MVE",
+        "image_link": "https://media.centrepointstores.com/i/centrepoint/125315-MVE-125315CP08012024_01-2100.jpg",
+        "title": "Skechers Go Walk Arch Fit 2.0 Women Shoes 125315-BBK | OE",
+        "typeEn": "Sport Shoes",
+        "brand": "Skechers",
+        "product_type": "women-shoes-sports"
+      },
+      {
+        "id": "125315-NVW",
+        "image_link": "https://media.centrepointstores.com/i/centrepoint/125315-NVW-125315CP08012024_01-2100.jpg",
+        "title": "Skechers Go Walk Arch Fit 2.0 Women Shoes 125315-BBK | OE",
+        "typeEn": "Sport Shoes",
+        "brand": "Skechers",
+        "product_type": "women-shoes-sports"
+      },
+      {
+        "id": "129444-BKMV",
+        "image_link": "https://media.centrepointstores.com/i/centrepoint/129444-BKMV-129444CP08012024_01-2100.jpg?v=1",
+        "title": "Skechers Go Run Lite Women Memory Foam Running Shoes 129444-BKMV | OE",
+        "typeEn": "Sport Shoes",
+        "brand": "Skechers",
+        "product_type": "women-shoes-sports"
+      },
+      {
+        "id": "129444-LTPK",
+        "image_link": "https://media.centrepointstores.com/i/centrepoint/129444-LTPK-129444CP08012024_01-2100.jpg?v=1",
+        "title": "Skechers Go Run Lite Women Memory Foam Running Shoes 129444-BKMV | OE",
+        "typeEn": "Sport Shoes",
+        "brand": "Skechers",
+        "product_type": "women-shoes-sports"
+      },
+      {
+        "id": "125204-MVE",
+        "image_link": "https://media.centrepointstores.com/i/centrepoint/125204-MVE-125204CP08012024_01-2100.jpg",
+        "title": "Skechers Go Walk 7 Women Memory Foam Walking Shoes 125204-MVE | OE",
         "typeEn": "Sport Shoes",
         "brand": "Skechers",
         "product_type": "women-shoes-sports"
@@ -1129,6 +1305,106 @@
         "department": "Women",
         "material": "PU",
         "product_type": "women-bagsandwallets-wallets"
+      },
+      {
+        "id": 166060649,
+        "image_link": "https://media.centrepointstores.com/i/centrepoint/166060649-166060649-SMLSM24181123_01-2100.jpg",
+        "title": "Missy Solid Tote Bag with Double Handle and Zip Closure",
+        "typeEn": "Handbags",
+        "brand": "Missy",
+        "department": "Women",
+        "material": "PU",
+        "product_type": "women-bagsandwallets-handbags"
+      },
+      {
+        "id": 166075135,
+        "image_link": "https://media.centrepointstores.com/i/centrepoint/166075135-166075135-SMLSM24130124_01-2100.jpg",
+        "title": "Elle All-Over Monogram Print Crossbody Bag",
+        "typeEn": "Handbags",
+        "brand": "Elle",
+        "department": "Women",
+        "material": "PU",
+        "product_type": "women-bagsandwallets-handbags"
+      },
+      {
+        "id": 166075131,
+        "image_link": "https://media.centrepointstores.com/i/centrepoint/166075131-166075132-SMLSM24130124_01-2100.jpg",
+        "title": "Elle Monogram Embossed Crossbody Bag",
+        "typeEn": "Handbags",
+        "brand": "Elle",
+        "department": "Women",
+        "material": "PU",
+        "product_type": "women-bagsandwallets-handbags"
+      },
+      {
+        "id": 166078671,
+        "image_link": "https://media.centrepointstores.com/i/centrepoint/166078671-166078671-SMLSM24181123_01-2100.jpg",
+        "title": "Missy Solid Shoulder Bag with Adjustable Strap",
+        "typeEn": "Handbags",
+        "brand": "Missy",
+        "department": "Women",
+        "material": "PU",
+        "product_type": "women-bagsandwallets-handbags"
+      },
+      {
+        "id": 166111875,
+        "image_link": "https://media.centrepointstores.com/i/centrepoint/166111875-166111876-SMLSM24130124_01-2100.jpg",
+        "title": "Celeste Embossed Crossbody Bag with Chain Strap and Zip Closure",
+        "typeEn": "Handbags",
+        "brand": "Celeste",
+        "department": "Women",
+        "material": "PU",
+        "product_type": "women-bagsandwallets-handbags"
+      },
+      {
+        "id": 166111891,
+        "image_link": "https://media.centrepointstores.com/i/centrepoint/166111891-166111891-SMLSM24130124_01-2100.jpg",
+        "title": "Celeste Embellished Crossbody Bag with Detachable Chain Strap and Magnetic Closure",
+        "typeEn": "Handbags",
+        "brand": "Celeste",
+        "department": "Women",
+        "material": "Polyester",
+        "product_type": "women-bagsandwallets-handbags"
+      },
+      {
+        "id": 166111893,
+        "image_link": "https://media.centrepointstores.com/i/centrepoint/166111893-166111893-SMLSM24140124_01-2100.jpg",
+        "title": "Celeste Embellished Stain Crossbody Bag",
+        "typeEn": "Handbags",
+        "brand": "Celeste",
+        "department": "Women",
+        "material": "Polyester",
+        "product_type": "women-bagsandwallets-handbags"
+      },
+      {
+        "id": 166111882,
+        "image_link": "https://media.centrepointstores.com/i/centrepoint/166111882-166111893-SMLSM24140124_01-2100.jpg",
+        "title": "Celeste Embellished Stain Crossbody Bag",
+        "typeEn": "Handbags",
+        "brand": "Celeste",
+        "department": "Women",
+        "material": "Polyester",
+        "product_type": "women-bagsandwallets-handbags"
+      },
+      {
+        "id": 166111883,
+        "image_link": "https://media.centrepointstores.com/i/centrepoint/166111883-166111893-SMLSM24140124_01-2100.jpg",
+        "title": "Celeste Embellished Stain Crossbody Bag",
+        "typeEn": "Handbags",
+        "brand": "Celeste",
+        "department": "Women",
+        "material": "Polyester",
+        "product_type": "women-bagsandwallets-handbags"
+      },
+      {
+        "id": 166111885,
+        "image_link": "https://media.centrepointstores.com/i/centrepoint/166111885-166111885-SMLSM24140124_01-2100.jpg",
+        "title": "Celeste Embellished Crossbody Bag",
+        "typeEn": "Handbags",
+        "brand": "Celeste",
+        "department": "Women",
+        "material": "PU",
+        "product_type": "women-bagsandwallets-handbags"
       }
     ]
   },
@@ -1498,6 +1774,96 @@
         "brand": "Lee Cooper",
         "department": "Men",
         "product_type": "men-clothing-tshirtsandpolos-tshirts"
+      },
+      {
+        "id": 3021524,
+        "image_link": "https://media.centrepointstores.com/i/centrepoint/3021524-HQ154318-SPWIN24290424_01-2100.jpg",
+        "title": "Lee Cooper Crew Neck T-shirt with Short Sleeves",
+        "typeEn": "T-shirts",
+        "brand": "Lee Cooper",
+        "department": "Men",
+        "product_type": "men-clothing-tshirtsandpolos-tshirts"
+      },
+      {
+        "id": 3021525,
+        "image_link": "https://media.centrepointstores.com/i/centrepoint/3021525-HQ154318-SPWIN24290424_01-2100.jpg",
+        "title": "Lee Cooper Crew Neck T-shirt with Short Sleeves",
+        "typeEn": "T-shirts",
+        "brand": "Lee Cooper",
+        "department": "Men",
+        "product_type": "men-clothing-tshirtsandpolos-tshirts"
+      },
+      {
+        "id": 3521455,
+        "image_link": "https://media.centrepointstores.com/i/centrepoint/3521455-HQ154117-SPWIN24180424_01-2100.jpg?v=1",
+        "title": "Textured Relaxed Fit Shirt with Camp Collar and Short Sleeves",
+        "typeEn": "Shirts",
+        "brand": "Splash",
+        "department": "Men",
+        "product_type": "men-clothing-shirts"
+      },
+      {
+        "id": 3521453,
+        "image_link": "https://media.centrepointstores.com/i/centrepoint/3521453-HQ154117-SPWIN24180424_01-2100.jpg?v=1",
+        "title": "Textured Relaxed Fit Shirt with Camp Collar and Short Sleeves",
+        "typeEn": "Shirts",
+        "brand": "Splash",
+        "department": "Men",
+        "product_type": "men-clothing-shirts"
+      },
+      {
+        "id": 3021550,
+        "image_link": "https://media.centrepointstores.com/i/centrepoint/3021550-HQ154312-SPWIN24040524_01-2100.jpg",
+        "title": "Lee Cooper Ribbed Crew Neck T-shirt with Short Sleeves",
+        "typeEn": "T-shirts",
+        "brand": "Lee Cooper",
+        "department": "Men",
+        "product_type": "men-clothing-tshirtsandpolos-tshirts"
+      },
+      {
+        "id": 3021551,
+        "image_link": "https://media.centrepointstores.com/i/centrepoint/3021551-HQ154312-SPWIN24040524_01-2100.jpg",
+        "title": "Lee Cooper Ribbed Crew Neck T-shirt with Short Sleeves",
+        "typeEn": "T-shirts",
+        "brand": "Lee Cooper",
+        "department": "Men",
+        "product_type": "men-clothing-tshirtsandpolos-tshirts"
+      },
+      {
+        "id": 2304503,
+        "image_link": "https://media.centrepointstores.com/i/centrepoint/2304503-HQ153980-SPWIN24010524_01-2100.jpg?v=1",
+        "title": "Iconic Relaxed Fit Textured Shirt with Camp Collar and Short Sleeves",
+        "typeEn": "Shirts",
+        "brand": "Iconic",
+        "department": "Men",
+        "product_type": "men-clothing-shirts"
+      },
+      {
+        "id": 2304505,
+        "image_link": "https://media.centrepointstores.com/i/centrepoint/2304505-HQ153980-SPWIN24010524_01-2100.jpg",
+        "title": "Iconic Relaxed Fit Textured Shirt with Camp Collar and Short Sleeves",
+        "typeEn": "Shirts",
+        "brand": "Iconic",
+        "department": "Men",
+        "product_type": "men-clothing-shirts"
+      },
+      {
+        "id": 2304504,
+        "image_link": "https://media.centrepointstores.com/i/centrepoint/2304504-HQ153980-SPWIN24010524_01-2100.jpg",
+        "title": "Iconic Relaxed Fit Textured Shirt with Camp Collar and Short Sleeves",
+        "typeEn": "Shirts",
+        "brand": "Iconic",
+        "department": "Men",
+        "product_type": "men-clothing-shirts"
+      },
+      {
+        "id": 3521355,
+        "image_link": "https://media.centrepointstores.com/i/centrepoint/3521355-HQ154014-SPWIN24290424_01-2100.jpg?v=1",
+        "title": "Graphic Print Crew Neck T-shirt with Short Sleeves",
+        "typeEn": "T-shirts",
+        "brand": "Splash",
+        "department": "Men",
+        "product_type": "men-clothing-tshirtsandpolos-tshirts"
       }
     ],
     "Footwear": [
@@ -1826,6 +2192,86 @@
         "typeEn": "Sneakers",
         "brand": "Jack & Jones",
         "product_type": "men-shoes-sneakers"
+      },
+      {
+        "id": "12184173Black",
+        "image_link": "https://media.centrepointstores.com/i/centrepoint/12184173Black-12184173CPE13022023_01-2100.jpg",
+        "title": "Jack & Jones Low Top Lace-Up Sneakers | 12184173",
+        "typeEn": "Sneakers",
+        "brand": "Jack & Jones",
+        "product_type": "men-shoes-sneakers"
+      },
+      {
+        "id": "12241142anthracite",
+        "image_link": "https://media.centrepointstores.com/i/centrepoint/12241142anthracite-12241142CP22-11-2023_01-2100.jpg",
+        "title": "Jack & Jones Men's Lace-Up & Zipper Leather Boots | 12241142",
+        "typeEn": "Boots",
+        "brand": "Jack & Jones",
+        "product_type": "men-shoes-boots"
+      },
+      {
+        "id": "12204004anthracite",
+        "image_link": "https://media.centrepointstores.com/i/centrepoint/12204004anthracite-12204004CPE13072023_01-2100.jpg",
+        "title": "Jack & Jones Men's Buckle Detail Slide Sandals | 12204004",
+        "typeEn": "Sandals",
+        "brand": "Jack & Jones",
+        "product_type": "men-shoes-sandals"
+      },
+      {
+        "id": "12254115black",
+        "image_link": "https://media.centrepointstores.com/i/centrepoint/12254115black-12254115CP13-02-2024_01-2100.jpg",
+        "title": "Jack & Jones Men's Low Top Lace Up Sneakers",
+        "typeEn": "Sneakers",
+        "brand": "Jack & Jones",
+        "product_type": "men-shoes-sneakers"
+      },
+      {
+        "id": "12254003AWhiteCN100",
+        "image_link": "https://media.centrepointstores.com/i/centrepoint/12254003AWhiteCN100-12254003ACP24-04-2024_01-2100.jpg?v=1",
+        "title": "Jack & Jones Men's Low Top Lace-Up Sneakers | 12254003",
+        "typeEn": "Sneakers",
+        "brand": "Jack & Jones",
+        "product_type": "men-shoes-sneakers"
+      },
+      {
+        "id": "12257195navyblazer",
+        "image_link": "https://media.centrepointstores.com/i/centrepoint/12257195navyblazer-12257195CP13-02-2024_01-2100.jpg",
+        "title": "Jack & Jones Men's Low Top Lace Up Canvas Sneakers",
+        "typeEn": "Sneakers",
+        "brand": "Jack & Jones",
+        "product_type": "men-shoes-sneakers"
+      },
+      {
+        "id": "12257195moonbeam",
+        "image_link": "https://media.centrepointstores.com/i/centrepoint/12257195moonbeam-12257195CP13-02-2024_01-2100.jpg",
+        "title": "Jack & Jones Men's Low Top Lace Up Canvas Sneakers",
+        "typeEn": "Sneakers",
+        "brand": "Jack & Jones",
+        "product_type": "men-shoes-sneakers"
+      },
+      {
+        "id": "12257195white",
+        "image_link": "https://media.centrepointstores.com/i/centrepoint/12257195white-12257195CP13-02-2024_01-2100.jpg?v=1",
+        "title": "Jack & Jones Men's Low Top Lace Up Canvas Sneakers",
+        "typeEn": "Sneakers",
+        "brand": "Jack & Jones",
+        "product_type": "men-shoes-sneakers"
+      },
+      {
+        "id": "20CIREDONBlue",
+        "image_link": "https://media.centrepointstores.com/i/centrepoint/20CIREDONBlue-20CIREDONCP18-02-2023_01-2100.jpg",
+        "title": "Aldo Men Ciredon Slip On Casual Shoes",
+        "typeEn": "Loafers & Moccasins",
+        "brand": "Aldo",
+        "product_type": "men-shoes-loafersandmoccasins"
+      },
+      {
+        "id": "20CIREDONBrown",
+        "image_link": "https://media.centrepointstores.com/i/centrepoint/20CIREDONBrown-20CIREDONCP18-02-2023_01-2100.jpg",
+        "title": "Aldo Men Ciredon Slip On Casual Shoes",
+        "typeEn": "Loafers & Moccasins",
+        "brand": "Aldo",
+        "product_type": "men-shoes-loafersandmoccasins"
       }
     ],
     "Accessories": [
@@ -2190,6 +2636,98 @@
         "department": "Men",
         "material": "Stainless Steel",
         "product_type": "men-watchesandjewellery-watches"
+      },
+      {
+        "id": 167177461,
+        "image_link": "https://media.centrepointstores.com/i/centrepoint/167177461-MTP-M305D-9AVDFCP18-07-2024_01-2100.jpg",
+        "title": "Casio Men's 34 MM Silver Analog Stainless Steel Watch | MTP-M305D-9AVDF",
+        "typeEn": "Watches",
+        "brand": "Casio",
+        "department": "Men",
+        "material": "Stainless Steel",
+        "product_type": "men-watchesandjewellery-watches"
+      },
+      {
+        "id": 167177473,
+        "image_link": "https://media.centrepointstores.com/i/centrepoint/167177473-WS-B1000-8BVDFCP18-07-2024_01-2100.jpg",
+        "title": "Casio Men's 41 MM White Digital Silicone Watch | WS-B1000-8BVDF",
+        "typeEn": "Watches",
+        "brand": "Casio",
+        "material": "Silicone",
+        "product_type": "men-watchesandjewellery-watches"
+      },
+      {
+        "id": 167177472,
+        "image_link": "https://media.centrepointstores.com/i/centrepoint/167177472-WS-B1000-2AVDFCP18-07-2024_01-2100.jpg",
+        "title": "Casio Men's 41 MM Blue Digital Silicone Watch | WS-B1000-2AVDF",
+        "typeEn": "Watches",
+        "brand": "Casio",
+        "material": "Silicone",
+        "product_type": "men-watchesandjewellery-watches"
+      },
+      {
+        "id": 167177449,
+        "image_link": "https://media.centrepointstores.com/i/centrepoint/167177449-MDV-107D-3AVDFCP18-07-2024_01-2100.jpg",
+        "title": "Casio Men's 44 MM Silver Analog Stainless Steel Watch | MDV-107D-3AVDF",
+        "typeEn": "Watches",
+        "brand": "Casio",
+        "department": "Men",
+        "material": "Stainless Steel",
+        "product_type": "men-watchesandjewellery-watches"
+      },
+      {
+        "id": 4834277,
+        "image_link": "https://media.centrepointstores.com/i/centrepoint/4834277-HQ156827-SPWIN24220624_01-2100.jpg",
+        "title": "Leaf Pendant Necklace with Lobster Clasp Closure",
+        "typeEn": "Necklaces & Pendants",
+        "brand": "Splash",
+        "department": "Men",
+        "product_type": "men-watchesandjewellery-necklacesandpendants"
+      },
+      {
+        "id": 4834271,
+        "image_link": "https://media.centrepointstores.com/i/centrepoint/4834271-HQ156822-SPWIN24220624_02-2100.jpg",
+        "title": "Metallic Bracelet",
+        "typeEn": "Bracelets",
+        "brand": "Splash",
+        "department": "Men",
+        "product_type": "men-watchesandjewellery-bracelets"
+      },
+      {
+        "id": 4834286,
+        "image_link": "https://media.centrepointstores.com/i/centrepoint/4834286-HQ156837-SPWIN24220624_01-2100.jpg",
+        "title": "Set of 3 - Textured Metal Ring",
+        "typeEn": "Rings",
+        "brand": "Splash",
+        "department": "Men",
+        "product_type": "men-watchesandjewellery-rings"
+      },
+      {
+        "id": 4834283,
+        "image_link": "https://media.centrepointstores.com/i/centrepoint/4834283-HQ156832-SPWIN24220624_01-2100.jpg",
+        "title": "Sun Detail Metal Ring",
+        "typeEn": "Rings",
+        "brand": "Splash",
+        "department": "Men",
+        "product_type": "men-watchesandjewellery-rings"
+      },
+      {
+        "id": 4834282,
+        "image_link": "https://media.centrepointstores.com/i/centrepoint/4834282-HQ156831-SPWIN24270524_01-2100.jpg",
+        "title": "Set of 2 - Metallic Ring",
+        "typeEn": "Rings",
+        "brand": "Splash",
+        "department": "Men",
+        "product_type": "men-watchesandjewellery-rings"
+      },
+      {
+        "id": 4834281,
+        "image_link": "https://media.centrepointstores.com/i/centrepoint/4834281-HQ156830-SPWIN24040624_01-2100.jpg",
+        "title": "Layered Pendant Necklace with Lobster Clasp Closure",
+        "typeEn": "Necklaces & Pendants",
+        "brand": "Splash",
+        "department": "Men",
+        "product_type": "men-watchesandjewellery-necklacesandpendants"
       }
     ]
   },
@@ -2566,10 +3104,80 @@
         "brand": "Home Centre",
         "department": "Kids",
         "product_type": "babyandkids-bathandstorage-bath-bathmats"
+      },
+      {
+        "id": 160540419,
+        "image_link": "https://media.homecentre.com/i/homecentre/160540419-160540419-HC020718_01-2100.jpg",
+        "title": "Alex Armless Study Chair",
+        "typeEn": "Chairs & Stools",
+        "brand": "Home Centre",
+        "department": "Kids",
+        "product_type": "babyandkids-roomfurniture-chairsandstools"
+      },
+      {
+        "id": 160540422,
+        "image_link": "https://media.homecentre.com/i/homecentre/160540422-160540422-HC020718_01-2100.jpg",
+        "title": "Alex's Armless Desk Chair",
+        "typeEn": "Chairs & Stools",
+        "brand": "Home Centre",
+        "department": "Kids",
+        "product_type": "babyandkids-roomfurniture-chairsandstools"
+      },
+      {
+        "id": 160856181,
+        "image_link": "https://media.homecentre.com/i/homecentre/160856181-160856180-HC12012019_01-2100.jpg?v=2",
+        "title": "Andy Wooden Guard Rail",
+        "typeEn": "Safety Accessories",
+        "brand": "Home Centre",
+        "department": "Kids",
+        "product_type": "babyandkids-roomfurniture-accessories"
+      },
+      {
+        "id": 160856180,
+        "image_link": "https://media.homecentre.com/i/homecentre/160856180-160856180-HC12012019_01-2100.jpg?v=1",
+        "title": "Andy Wooden Guard Rail",
+        "typeEn": "Safety Accessories",
+        "brand": "Home Centre",
+        "department": "Kids",
+        "product_type": "babyandkids-roomfurniture-accessories"
+      },
+      {
+        "id": 165119236,
+        "image_link": "https://media.homecentre.com/i/homecentre/165119236-160856180-HC12012019_01-2100.jpg",
+        "title": "Andy Wooden Guard Rail",
+        "typeEn": "Safety Accessories",
+        "brand": "Home Centre",
+        "department": "Kids",
+        "product_type": "babyandkids-roomfurniture-accessories"
+      },
+      {
+        "id": 161971704,
+        "image_link": "https://media.homecentre.com/i/homecentre/161971704-161971704-HC12012020_01-2100.jpg?v=2",
+        "title": "Ronnie Wooden Safety Gate",
+        "typeEn": "Safety Accessories",
+        "brand": "Home Centre",
+        "department": "Kids",
+        "product_type": "babyandkids-roomfurniture-accessories"
+      },
+      {
+        "id": 165119237,
+        "image_link": "https://media.homecentre.com/i/homecentre/165119237-161971704-HC12012020_01-2100.jpg",
+        "title": "Ronnie Wooden Safety Gate",
+        "typeEn": "Safety Accessories",
+        "brand": "Home Centre",
+        "department": "Kids",
+        "product_type": "babyandkids-roomfurniture-accessories"
+      },
+      {
+        "id": 166157578,
+        "image_link": "https://media.homecentre.com/i/homecentre/166157578-161971704-HC12012020_01-2100.jpg?v=1",
+        "title": "Ronnie Wooden Safety Gate",
+        "typeEn": "Safety Accessories",
+        "brand": "Home Centre",
+        "department": "Kids",
+        "product_type": "babyandkids-roomfurniture-accessories"
       }
-    ],
-    "Footwear": [],
-    "Toys & Games": []
+    ]
   },
   "Girls": {
     "Clothing": [
@@ -2925,6 +3533,95 @@
         "typeEn": "Bodysuits",
         "brand": "Juniors",
         "product_type": "baby-girls-clothing-bodysuits"
+      },
+      {
+        "id": "RD3152GreyC-SHADE",
+        "image_link": "https://media.centrepointstores.com/i/centrepoint/RD3152GreyC-SHADE-RD3152-BSRG280818_01-2100.jpg?v=4",
+        "title": "Juniors Textured Tights",
+        "typeEn": "Innerwear",
+        "brand": "Juniors",
+        "material": "Cotton Blend",
+        "product_type": "baby-girls-clothing-innerwear"
+      },
+      {
+        "id": "RD3040PPINKC-SHADE",
+        "image_link": "https://media.centrepointstores.com/i/centrepoint/RD3040PPINKC-SHADE-RD3040P-BSRG040319_01-2100.jpg?v=3",
+        "title": "Juniors Solid Tights",
+        "typeEn": "Innerwear",
+        "brand": "Juniors",
+        "material": "Cotton Blend",
+        "product_type": "baby-girls-clothing-innerwear"
+      },
+      {
+        "id": "RD3129BEIGEC-SHADE",
+        "image_link": "https://media.centrepointstores.com/i/centrepoint/RD3129BEIGEC-SHADE-RD3129--BA18BS032718_01-2100.jpg?v=3",
+        "title": "Juniors Tights with Elasticised Waistband",
+        "typeEn": "Innerwear",
+        "brand": "Juniors",
+        "product_type": "baby-girls-clothing-innerwear"
+      },
+      {
+        "id": "RD3151PinkC-SHADE",
+        "image_link": "https://media.centrepointstores.com/i/centrepoint/RD3151PinkC-SHADE-RD3151-BSRG280818_01-2100.jpg?v=4",
+        "title": "Juniors Textured Tights with Elasticised Waistband",
+        "typeEn": "Innerwear",
+        "brand": "Juniors",
+        "material": "Cotton Blend",
+        "product_type": "baby-girls-clothing-innerwear"
+      },
+      {
+        "id": "RD3041BLACKC-SHADE",
+        "image_link": "https://media.centrepointstores.com/i/centrepoint/RD3041BLACKC-SHADE-RD3041-BA18BS050218_01-2100.jpg?v=1",
+        "title": "Juniors Full Length Tights with Elasticised Waistband",
+        "typeEn": "Innerwear",
+        "brand": "Juniors",
+        "material": "Cotton Blend",
+        "product_type": "baby-girls-clothing-innerwear"
+      },
+      {
+        "id": "PY834-008WHITELIGHT",
+        "image_link": "https://media.centrepointstores.com/i/centrepoint/PY834-008WHITELIGHT-PY834-008-AW18BS130618_01-2100.jpg?v=4",
+        "title": "Juniors Textured Closed Feet Tights - Set of 2",
+        "typeEn": "Socks",
+        "brand": "Juniors",
+        "material": "Cotton Blend",
+        "product_type": "girls-clothing-socks"
+      },
+      {
+        "id": "QH0051CCREAMC-SHADE",
+        "image_link": "https://media.centrepointstores.com/i/centrepoint/QH0051CCREAMC-SHADE-QH0051C-BA18BS563_01-2100.jpg?v=4",
+        "title": "Giggles Embellished 6-Piece Gift Set",
+        "typeEn": "Sets & Coords",
+        "brand": "Giggles",
+        "material": "Cotton",
+        "product_type": "baby-girls-clothing-setsandcoords"
+      },
+      {
+        "id": "QH0051PPink",
+        "image_link": "https://media.centrepointstores.com/i/centrepoint/QH0051PPink-QH0051P-BA18BS593_01-2100.jpg?v=4",
+        "title": "Giggles Embellished 6-Piece Gift Set",
+        "typeEn": "Sets & Coords",
+        "brand": "Giggles",
+        "material": "Cotton",
+        "product_type": "baby-girls-clothing-setsandcoords"
+      },
+      {
+        "id": "PY734-010NewWhiteLIGHT",
+        "image_link": "https://media.centrepointstores.com/i/centrepoint/PY734-010NewWhiteLIGHT-PY734-010NewBSRG20291219_01-2100.jpg?v=3",
+        "title": "Juniors Full Length Tights - Set of 2",
+        "typeEn": "Socks",
+        "brand": "Juniors",
+        "material": "Cotton Blend",
+        "product_type": "girls-clothing-socks"
+      },
+      {
+        "id": "W55-A6-27-004WHITELIGHT",
+        "image_link": "https://media.centrepointstores.com/i/centrepoint/W55-A6-27-004WHITELIGHT-W55-A6-27-004-BSS20291019_01-2100.jpg?v=1",
+        "title": "Juniors Lace Detail Camisole with Shorts",
+        "typeEn": "Vests",
+        "brand": "Juniors",
+        "material": "Cotton",
+        "product_type": "girls-clothing-innerwear-vests"
       }
     ],
     "Footwear": [
@@ -3249,6 +3946,86 @@
         "typeEn": "Sandals",
         "brand": "Skechers",
         "product_type": "girls-shoes-sandals"
+      },
+      {
+        "id": "302967L-LVMT",
+        "image_link": "https://media.centrepointstores.com/i/centrepoint/302967L-LVMT-302967LCP08012024_01-2100.jpg?v=1",
+        "title": "Skechers Flutter Hearts Girls Memory Foam Sandals 302967L-LVMT | OE",
+        "typeEn": "Sandals",
+        "brand": "Skechers",
+        "product_type": "girls-shoes-sandals"
+      },
+      {
+        "id": "302967L-NVMT",
+        "image_link": "https://media.centrepointstores.com/i/centrepoint/302967L-NVMT-302967LCP08012024_01-2100.jpg?v=1",
+        "title": "Skechers Flutter Hearts Girls Memory Foam Sandals 302967L-LVMT | OE",
+        "typeEn": "Sandals",
+        "brand": "Skechers",
+        "product_type": "girls-shoes-sandals"
+      },
+      {
+        "id": "302689L-BKMT",
+        "image_link": "https://media.centrepointstores.com/i/centrepoint/302689L-BKMT-302689LCP08012024_01-2100.jpg?v=1",
+        "title": "Skechers Heart Lights Girls Memory Foam Sneakers 302689L-BKMT | OE",
+        "typeEn": "Sneakers",
+        "brand": "Skechers",
+        "product_type": "girls-shoes-sneakers"
+      },
+      {
+        "id": "310451L-TURQ",
+        "image_link": "https://media.centrepointstores.com/i/centrepoint/310451L-TURQ-310451LCP08012024_01-2100.jpg?v=1",
+        "title": "Skechers Uno Lite Girls Memory Foam Sneakers 310451L-TURQ | OE",
+        "typeEn": "Sneakers",
+        "brand": "Skechers",
+        "product_type": "girls-shoes-sneakers"
+      },
+      {
+        "id": "310451L-LTPK",
+        "image_link": "https://media.centrepointstores.com/i/centrepoint/310451L-LTPK-310451LCP08012024_01-2100.jpg",
+        "title": "Skechers Uno Lite Girls Memory Foam Sneakers 310451L-TURQ | OE",
+        "typeEn": "Sneakers",
+        "brand": "Skechers",
+        "product_type": "girls-shoes-sneakers"
+      },
+      {
+        "id": 37200932,
+        "image_link": "https://media.centrepointstores.com/i/centrepoint/37200932-372009CP13-01-2023_01-2100.jpg",
+        "title": "Puma Anzarun Lite Boy's Running Shoes 372009 | OE",
+        "typeEn": "Sports",
+        "brand": "Puma",
+        "product_type": "girls-shoes-sports"
+      },
+      {
+        "id": 38738618,
+        "image_link": "https://media.centrepointstores.com/i/centrepoint/38738618-387386CP10-06-2023_01-2100.jpg",
+        "title": "Puma All-Day Active Sneakers | 387386",
+        "typeEn": "Sports",
+        "brand": "Puma",
+        "product_type": "girls-shoes-sports"
+      },
+      {
+        "id": 38738718,
+        "image_link": "https://media.centrepointstores.com/i/centrepoint/38738718-387387CP13-01-2023_01-2100.jpg",
+        "title": "Puma All-Day Active Kids Sneakers 38738701",
+        "typeEn": "Sports",
+        "brand": "Puma",
+        "product_type": "girls-shoes-sports"
+      },
+      {
+        "id": 38738714,
+        "image_link": "https://media.centrepointstores.com/i/centrepoint/38738714-387387CP13-01-2023_01-2100.jpg",
+        "title": "Puma All-Day Active Kids Sneakers 38738701",
+        "typeEn": "Sports",
+        "brand": "Puma",
+        "product_type": "girls-shoes-sports"
+      },
+      {
+        "id": 38913507,
+        "image_link": "https://media.centrepointstores.com/i/centrepoint/38913507-389135CP10-06-2023_01-2100.jpg",
+        "title": "Puma Evolve Slip On Kids Sneakers | 389135",
+        "typeEn": "Sneakers",
+        "brand": "Puma",
+        "product_type": "girls-shoes-sneakers"
       }
     ],
     "Accessories": [
@@ -3630,6 +4407,106 @@
         "department": "Girls",
         "material": "Polyurethane",
         "product_type": "girls-accessories-bags"
+      },
+      {
+        "id": 163998071,
+        "image_link": "https://media.centrepointstores.com/i/centrepoint/163998071-K0064-S-SMSS22291121_01-2100.jpg",
+        "title": "Little Missy Embellished Crossbody Bag with Chain Strap",
+        "typeEn": "Bags",
+        "brand": "Little Missy",
+        "department": "Girls",
+        "material": "Polyurethane",
+        "product_type": "girls-accessories-bags"
+      },
+      {
+        "id": "LACE-KG-DSGN-ANKL-5-NJWHITE",
+        "image_link": "https://media.centrepointstores.com/i/centrepoint/LACE-KG-DSGN-ANKL-5-NJWHITE-LACE-KG-DSGN-ANKL-5-NJ-SMASM23130523_01-2100.jpg",
+        "title": "Juniors Textured Ankle Length Socks - Set of 5",
+        "typeEn": "Socks",
+        "brand": "Juniors",
+        "department": "Girls",
+        "material": "Cotton",
+        "product_type": "girls-accessories-socks"
+      },
+      {
+        "id": "LEAF-K-DSGN-TGHT-2-NSWHITE",
+        "image_link": "https://media.centrepointstores.com/i/centrepoint/LEAF-K-DSGN-TGHT-2-NSWHITE-LEAF-K-DSGN-TGHT-2-NS-SMSS24120224_01-2100.jpg",
+        "title": "Little Missy Solid Tights - Set of 2",
+        "typeEn": "Socks",
+        "brand": "Little Missy",
+        "department": "Girls",
+        "material": "Cotton",
+        "product_type": "girls-accessories-socks"
+      },
+      {
+        "id": "MEL-K-DSGN-TGHT-2-NSMULTICOLOUR",
+        "image_link": "https://media.centrepointstores.com/i/centrepoint/MEL-K-DSGN-TGHT-2-NSMULTICOLOUR-MEL-K-DSGN-TGHT-2-NS-SMSS24120224_01-2100.jpg",
+        "title": "Little Missy Solid Tights - Set of 2",
+        "typeEn": "Socks",
+        "brand": "Little Missy",
+        "department": "Girls",
+        "material": "Cotton",
+        "product_type": "girls-accessories-socks"
+      },
+      {
+        "id": "MEL-BABY-DSGN-TGHT-2MULTICOLOUR",
+        "image_link": "https://media.centrepointstores.com/i/centrepoint/MEL-BABY-DSGN-TGHT-2MULTICOLOUR-MEL-BABY-DSGN-TGHT-2-SMSS24120224_01-2100.jpg",
+        "title": "Barefeet Solid Tights - Set of 2",
+        "typeEn": "Socks",
+        "brand": "Barefeet",
+        "department": "Girls",
+        "material": "Cotton",
+        "product_type": "girls-accessories-socks"
+      },
+      {
+        "id": "MINNIE2-KG-DSGN-ANKL-3MULTICOLOUR",
+        "image_link": "https://media.centrepointstores.com/i/centrepoint/MINNIE2-KG-DSGN-ANKL-3MULTICOLOUR-MINNIE2-KG-DSGN-ANKL-3-SMASM23120423_01-2100.jpg",
+        "title": "Disney Minnie Mouse Print Ankle Length Socks - Set of 3",
+        "typeEn": "Socks",
+        "brand": "Disney",
+        "department": "Girls",
+        "material": "Cotton",
+        "product_type": "girls-accessories-socks"
+      },
+      {
+        "id": "MYRA-K-DSGN-TGHT-2MULTICOLOUR",
+        "image_link": "https://media.centrepointstores.com/i/centrepoint/MYRA-K-DSGN-TGHT-2MULTICOLOUR-MYRA-K-DSGN-TGHT-2-SMAW23100823_01-2100.jpg",
+        "title": "Little Missy Textured Tights - Set of 2",
+        "typeEn": "Socks",
+        "brand": "Little Missy",
+        "department": "Girls",
+        "material": "Cotton",
+        "product_type": "girls-accessories-socks"
+      },
+      {
+        "id": "NINA-KG-DSGN-ANKL-5PINK",
+        "image_link": "https://media.centrepointstores.com/i/centrepoint/NINA-KG-DSGN-ANKL-5PINK-NINA-KG-DSGN-ANKL-5-SMAW23100823_01-2100.jpg",
+        "title": "Little Missy Solid Ankle Length Socks - Set of 5",
+        "typeEn": "Socks",
+        "brand": "Little Missy",
+        "department": "Girls",
+        "material": "Cotton",
+        "product_type": "girls-accessories-socks"
+      },
+      {
+        "id": "NINA-KG-DSGN-NT-ANKL-5MULTICOLOUR",
+        "image_link": "https://media.centrepointstores.com/i/centrepoint/NINA-KG-DSGN-NT-ANKL-5MULTICOLOUR-NINA-KG-DSGN-NT-ANKL-5-SMAW23260723_01-2100.jpg",
+        "title": "Kappa Logo Detail Ankle Length Sports Socks - Set of 5",
+        "typeEn": "Socks",
+        "brand": "Kappa",
+        "department": "Girls",
+        "material": "Cotton",
+        "product_type": "girls-accessories-socks"
+      },
+      {
+        "id": "NOLY-KG-DSGN-HT-ANKL-5PINK",
+        "image_link": "https://media.centrepointstores.com/i/centrepoint/NOLY-KG-DSGN-HT-ANKL-5PINK-NOLY-KG-DSGN-HT-ANKL-5-SMAW23251023_01-2100.jpg",
+        "title": "Kappa Logo Print Ankle Length Sports Socks - Set of 5",
+        "typeEn": "Socks",
+        "brand": "Kappa",
+        "department": "Girls",
+        "material": "Cotton",
+        "product_type": "girls-accessories-socks"
       }
     ]
   },
@@ -3978,6 +4855,93 @@
         "typeEn": "Tshirts & Polos",
         "brand": "Juniors",
         "product_type": "boys-clothing-tshirtsandpolos"
+      },
+      {
+        "id": "R305-103BLACKDARK",
+        "image_link": "https://media.centrepointstores.com/i/centrepoint/R305-103BLACKDARK-R305-103-W17BS01_01-2100.jpg?v=2",
+        "title": "Juniors Solid Shorts with Pocket Detail and Elasticised Waistband",
+        "typeEn": "Shorts",
+        "brand": "Juniors",
+        "material": "Cotton",
+        "product_type": "boys-clothing-bottoms-shorts"
+      },
+      {
+        "id": "R305-103BLUEDARK",
+        "image_link": "https://media.centrepointstores.com/i/centrepoint/R305-103BLUEDARK-R305-103-W17BS01_01-2100.jpg?v=4",
+        "title": "Juniors Solid Shorts with Pocket Detail and Elasticised Waistband",
+        "typeEn": "Shorts",
+        "brand": "Juniors",
+        "material": "Cotton",
+        "product_type": "boys-clothing-bottoms-shorts"
+      },
+      {
+        "id": "R212-100GREYMEDIUM",
+        "image_link": "https://media.centrepointstores.com/i/centrepoint/R212-100GREYMEDIUM-R212-100-AADC-W17BS84_01-2100.jpg",
+        "title": "Juniors Solid Jacket with Long Sleeves and Hood",
+        "typeEn": "Jackets & Coats",
+        "brand": "Juniors",
+        "product_type": "boys-clothing-jacketsandcoats"
+      },
+      {
+        "id": "R312-100BLACKDARK",
+        "image_link": "https://media.centrepointstores.com/i/centrepoint/R312-100BLACKDARK-R312-100-GADC-W17BS84_01-2100.jpg?v=2",
+        "title": "Juniors Textured Long Sleeves Jacket with Hood",
+        "typeEn": "Jackets & Coats",
+        "brand": "Juniors",
+        "product_type": "boys-clothing-jacketsandcoats"
+      },
+      {
+        "id": "R312-100GREYMEDIUM",
+        "image_link": "https://media.centrepointstores.com/i/centrepoint/R312-100GREYMEDIUM-R312-100-GADC-W17BS84_01-2100.jpg?v=1",
+        "title": "Juniors Textured Long Sleeves Jacket with Hood",
+        "typeEn": "Jackets & Coats",
+        "brand": "Juniors",
+        "product_type": "boys-clothing-jacketsandcoats"
+      },
+      {
+        "id": 160183018,
+        "image_link": "https://media.centrepointstores.com/i/centrepoint/160183018-160183018-BSSS19170319_01-2100.jpg?v=1",
+        "title": "Juniors Printed Life Vest with Buckle Closure",
+        "typeEn": "Swimwear",
+        "brand": "Juniors",
+        "material": "Polyester",
+        "product_type": "boys-clothing-swimwear"
+      },
+      {
+        "id": 161150080,
+        "image_link": "https://media.centrepointstores.com/i/centrepoint/161150080-161150080-BSSS19170319_01-2100.jpg?v=1",
+        "title": "Bestway Swim Safe Printed Arm Floats",
+        "typeEn": "Swimwear",
+        "brand": "Bestway",
+        "material": "Polyester",
+        "product_type": "boys-clothing-swimwear"
+      },
+      {
+        "id": "BA0408S21WHITEC-SHADE",
+        "image_link": "https://media.centrepointstores.com/i/centrepoint/BA0408S21WHITEC-SHADE-BA0408S21-BSRG210621_01-2100.jpg?v=4",
+        "title": "Love Earth Solid Organic Shorts - Set of 3",
+        "typeEn": "Shorts",
+        "brand": "Love Earth",
+        "material": "Cotton",
+        "product_type": "baby-boys-clothing-bottoms-shorts"
+      },
+      {
+        "id": "BA0409S21WHITEC-SHADE",
+        "image_link": "https://media.centrepointstores.com/i/centrepoint/BA0409S21WHITEC-SHADE-BA0409S21-BSRG210621_01-2100.jpg?v=3",
+        "title": "Love Earth Solid Organic Bodysuit with Round Neck - Set of 5",
+        "typeEn": "Bodysuits",
+        "brand": "Love Earth",
+        "material": "Cotton",
+        "product_type": "baby-boys-clothing-bodysuits"
+      },
+      {
+        "id": "BA0407S21WHITEC-SHADE",
+        "image_link": "https://media.centrepointstores.com/i/centrepoint/BA0407S21WHITEC-SHADE-BA0407S21-BSRG210621_01-2100.jpg?v=7",
+        "title": "Love Earth Solid Organic Briefs - Set of 3",
+        "typeEn": "Innerwear",
+        "brand": "Love Earth",
+        "material": "Cotton",
+        "product_type": "baby-boys-clothing-innerwear"
       }
     ],
     "Footwear": [
@@ -4301,6 +5265,538 @@
         "typeEn": "Sports",
         "brand": "Skechers",
         "product_type": "boys-shoes-sports"
+      },
+      {
+        "id": "405095L-BLLM",
+        "image_link": "https://media.centrepointstores.com/i/centrepoint/405095L-BLLM-405095LCP08012024_01-2100.jpg?v=1",
+        "title": "Skechers Go Run 400 V2 Boys Memory Foam Running Shoes 405095L-BLLM | OE",
+        "typeEn": "Sports",
+        "brand": "Skechers",
+        "product_type": "boys-shoes-sports"
+      },
+      {
+        "id": "405095L-NVRD",
+        "image_link": "https://media.centrepointstores.com/i/centrepoint/405095L-NVRD-405095LCP08012024_01-2100.jpg?v=1",
+        "title": "Skechers Go Run 400 V2 Boys Memory Foam Running Shoes 405095L-BLLM | OE",
+        "typeEn": "Sports",
+        "brand": "Skechers",
+        "product_type": "boys-shoes-sports"
+      },
+      {
+        "id": "405095L-RDBK",
+        "image_link": "https://media.centrepointstores.com/i/centrepoint/405095L-RDBK-405095LCP08012024_01-2100.jpg?v=1",
+        "title": "Skechers Go Run 400 V2 Boys Memory Foam Running Shoes 405095L-BLLM | OE",
+        "typeEn": "Sports",
+        "brand": "Skechers",
+        "product_type": "boys-shoes-sports"
+      },
+      {
+        "id": "405096N-BLLM",
+        "image_link": "https://media.centrepointstores.com/i/centrepoint/405096N-BLLM-405096NCP08012024_01-2100.jpg",
+        "title": "Skechers Dyna-Lite Baby Memory Foam Low Ankle Sneakers 405096N-BLLM | OE",
+        "typeEn": "Closed Shoes",
+        "brand": "Skechers",
+        "product_type": "baby-boys-shoes-closedshoes"
+      },
+      {
+        "id": "405096N-NVRD",
+        "image_link": "https://media.centrepointstores.com/i/centrepoint/405096N-NVRD-405096NCP08012024_01-2100.jpg",
+        "title": "Skechers Dyna-Lite Baby Memory Foam Low Ankle Sneakers 405096N-BLLM | OE",
+        "typeEn": "Closed Shoes",
+        "brand": "Skechers",
+        "product_type": "baby-boys-shoes-closedshoes"
+      },
+      {
+        "id": "403932L-CCRD",
+        "image_link": "https://media.centrepointstores.com/i/centrepoint/403932L-CCRD-403932LCP08012024_01-2100.jpg?v=1",
+        "title": "Skechers Microspec Max Ii Boys Memory Foam Low Ankle Sneakers 403932L-CCRD | OE",
+        "typeEn": "Sneakers",
+        "brand": "Skechers",
+        "product_type": "boys-shoes-sneakers"
+      },
+      {
+        "id": "403932L-NVBL",
+        "image_link": "https://media.centrepointstores.com/i/centrepoint/403932L-NVBL-403932LCP08012024_01-2100.jpg?v=1",
+        "title": "Skechers Microspec Max Ii Boys Memory Foam Low Ankle Sneakers 403932L-CCRD | OE",
+        "typeEn": "Sneakers",
+        "brand": "Skechers",
+        "product_type": "boys-shoes-sneakers"
+      },
+      {
+        "id": "405035L-BKRD",
+        "image_link": "https://media.centrepointstores.com/i/centrepoint/405035L-BKRD-405035LCP08012024_01-2100.jpg?v=1",
+        "title": "Skechers Go Run 650 - Norvo Boys Memory Foam Running Shoes 405035L-CCOR | OE",
+        "typeEn": "Sports",
+        "brand": "Skechers",
+        "product_type": "boys-shoes-sports"
+      },
+      {
+        "id": "405035L-CCOR",
+        "image_link": "https://media.centrepointstores.com/i/centrepoint/405035L-CCOR-405035LCP08012024_01-2100.jpg?v=1",
+        "title": "Skechers Go Run 650 - Norvo Boys Memory Foam Running Shoes 405035L-CCOR | OE",
+        "typeEn": "Sports",
+        "brand": "Skechers",
+        "product_type": "boys-shoes-sports"
+      },
+      {
+        "id": "405037L-CCBK",
+        "image_link": "https://media.centrepointstores.com/i/centrepoint/405037L-CCBK-405037LCP06-10-2023_01-2100.jpg",
+        "title": "Skechers Go Run 650 Kids Shoes | 405037L",
+        "typeEn": "Sports",
+        "brand": "Skechers",
+        "product_type": "boys-shoes-sports"
+      }
+    ],
+    "School & Hobby": [
+      {
+        "id": "WJA9492-BLACK",
+        "image_link": "https://media.centrepointstores.com/i/centrepoint/WJA9492-BLACK-WJA9492-SX080624_01-2100.jpg",
+        "title": "Oaklan by Shoexpress Solid Backpack with Adjustable Straps - 42x30x16 cm",
+        "typeEn": "Backpacks",
+        "brand": "Oaklan by Shoexpress",
+        "material": "Polyester",
+        "product_type": "school-bagsandbackpacks-backpacks"
+      },
+      {
+        "id": "WJA9492-NAVY",
+        "image_link": "https://media.centrepointstores.com/i/centrepoint/WJA9492-NAVY-WJA9492-SX080624_01-2100.jpg",
+        "title": "Oaklan by Shoexpress Solid Backpack with Adjustable Straps - 42x30x16 cm",
+        "typeEn": "Backpacks",
+        "brand": "Oaklan by Shoexpress",
+        "material": "Polyester",
+        "product_type": "school-bagsandbackpacks-backpacks"
+      },
+      {
+        "id": 166687271,
+        "image_link": "https://media.centrepointstores.com/i/centrepoint/166687271-166687271-030624_01-2100.jpg?v=1",
+        "title": "Ferrari Logo Applique Backpack with Adjustable Shoulder Straps and Zip Closure - 16 inches",
+        "typeEn": "Backpacks",
+        "brand": "Ferrari",
+        "material": "Polyester",
+        "product_type": "school-bagsandbackpacks-backpacks"
+      },
+      {
+        "id": 166687888,
+        "image_link": "https://media.centrepointstores.com/i/centrepoint/166687888-166687888-310524_01-2100.jpg?v=1",
+        "title": "Disney All-Over Frozen Print Trolley Backpack with Retractable Handle and Zip Closure - 18 inches",
+        "typeEn": "Trolley Bags",
+        "brand": "Disney",
+        "material": "Polyester",
+        "product_type": "school-bagsandbackpacks-trolleybags"
+      },
+      {
+        "id": 166687874,
+        "image_link": "https://media.centrepointstores.com/i/centrepoint/166687874-166687874-310524_01-2100.jpg?v=2",
+        "title": "Spider-Man Print Trolley Backpack with Retractable Handle and Zip Closure - 14 inches",
+        "typeEn": "Trolley Bags",
+        "brand": "Marvel",
+        "material": "Polyester",
+        "product_type": "school-bagsandbackpacks-trolleybags"
+      },
+      {
+        "id": 166687892,
+        "image_link": "https://media.centrepointstores.com/i/centrepoint/166687892-166687892-310524_01-2100.jpg?v=1",
+        "title": "Disney All-Over Frozen Print Trolley Bag with Retractable Handle and Zip Closure - 18 inches",
+        "typeEn": "Trolley Bags",
+        "brand": "Disney",
+        "material": "Polyester",
+        "product_type": "school-bagsandbackpacks-trolleybags"
+      },
+      {
+        "id": 166687288,
+        "image_link": "https://media.centrepointstores.com/i/centrepoint/166687288-166687288-310524_01-2100.jpg?v=1",
+        "title": "Juniors Printed Backpack with Adjustable Straps and Zip Closure - 17 inches",
+        "typeEn": "Backpacks",
+        "brand": "Juniors",
+        "material": "Polyester",
+        "product_type": "school-bagsandbackpacks-backpacks"
+      },
+      {
+        "id": 166687289,
+        "image_link": "https://media.centrepointstores.com/i/centrepoint/166687289-166687289-310524_01-2100.jpg?v=1",
+        "title": "Juniors All-Over Print Backpack with Rivet Detail and Zip Closure - 17 inches",
+        "typeEn": "Backpacks",
+        "brand": "Juniors",
+        "material": "Polyester",
+        "product_type": "school-bagsandbackpacks-backpacks"
+      },
+      {
+        "id": 166687290,
+        "image_link": "https://media.centrepointstores.com/i/centrepoint/166687290-166687290-310524_01-2100.jpg?v=1",
+        "title": "Juniors All-Over Print Backpack with Adjustable Straps and Zip Closure - 17inches",
+        "typeEn": "Backpacks",
+        "brand": "Juniors",
+        "material": "Polyester",
+        "product_type": "school-bagsandbackpacks-backpacks"
+      },
+      {
+        "id": 166687310,
+        "image_link": "https://media.centrepointstores.com/i/centrepoint/166687310-166687310-310524_01-2100.jpg?v=1",
+        "title": "Juniors Solid Rucksack Backpack with Clip Lock Closure - 17 inches",
+        "typeEn": "Backpacks",
+        "brand": "Juniors",
+        "material": "Polyester",
+        "product_type": "school-bagsandbackpacks-backpacks"
+      },
+      {
+        "id": 166680637,
+        "image_link": "https://media.centrepointstores.com/i/centrepoint/166680637-166680637-310524_01-2100.jpg?v=1",
+        "title": "Spacetoon Printed Backpack with Adjustable Straps and Zip Closure - 18 inches",
+        "typeEn": "Backpacks",
+        "brand": "Spacetoon",
+        "material": "Polyester",
+        "product_type": "school-bagsandbackpacks-backpacks"
+      },
+      {
+        "id": 166680462,
+        "image_link": "https://media.centrepointstores.com/i/centrepoint/166680462-166680462-310524_01-2100.jpg?v=1",
+        "title": "Juniors Astronaut Print Pencil Pouch with Zip Closure",
+        "typeEn": "Pencil Cases",
+        "brand": "Juniors",
+        "material": "Polyester",
+        "product_type": "school-stationery-pencilcases"
+      },
+      {
+        "id": 166680457,
+        "image_link": "https://media.centrepointstores.com/i/centrepoint/166680457-166680457-310524_01-2100.jpg?v=1",
+        "title": "Juniors Fairy Print Lunch Bag with Zip Closure and Adjustable Strap",
+        "typeEn": "Lunch Bags",
+        "brand": "Juniors",
+        "material": "Polyester",
+        "product_type": "school-lunchessentials-lunchbags"
+      },
+      {
+        "id": 166686914,
+        "image_link": "https://media.centrepointstores.com/i/centrepoint/166686914-166686914-310524_01-2100.jpg?v=1",
+        "title": "Pokemon Pikachu Print Backpack with Adjustable Straps and Zip Closure - 16 inches",
+        "typeEn": "Backpacks",
+        "brand": "Pokemon",
+        "material": "Polyester",
+        "product_type": "school-bagsandbackpacks-backpacks"
+      },
+      {
+        "id": 166680458,
+        "image_link": "https://media.centrepointstores.com/i/centrepoint/166680458-166680458-310524_01-2100.jpg?v=1",
+        "title": "Juniors Fairy Print Pencil Pouch with Zip Closure and Handle",
+        "typeEn": "Pencil Cases",
+        "brand": "Juniors",
+        "material": "Polyester",
+        "product_type": "school-stationery-pencilcases"
+      },
+      {
+        "id": 166680594,
+        "image_link": "https://media.centrepointstores.com/i/centrepoint/166680594-166680594-310524_01-2100.jpg?v=1",
+        "title": "Sonic the Hedgehog Print Backpack with Adjustable Shoulder Straps and Zip Closure",
+        "typeEn": "Backpacks",
+        "brand": "CPLG",
+        "material": "Polyester",
+        "product_type": "school-bagsandbackpacks-backpacks"
+      },
+      {
+        "id": 166687632,
+        "image_link": "https://media.centrepointstores.com/i/centrepoint/166687632-166687632-310524_01-2100.jpg?v=1",
+        "title": "Barbie Print Trolley Bag with Retractable Handle and Zip Closure - 18 inches",
+        "typeEn": "Trolley Bags",
+        "brand": "Mattel",
+        "material": "Polyester",
+        "product_type": "school-bagsandbackpacks-trolleybags"
+      },
+      {
+        "id": 166680452,
+        "image_link": "https://media.centrepointstores.com/i/centrepoint/166680452-166680452-310524_01-2100.jpg?v=1",
+        "title": "Juniors Mermaid Embossed Backpack with Adjustable Strap with Zip Closure - 14 inches",
+        "typeEn": "Backpacks",
+        "brand": "Juniors",
+        "material": "Polyester Blend",
+        "product_type": "school-bagsandbackpacks-backpacks"
+      },
+      {
+        "id": 166680251,
+        "image_link": "https://media.centrepointstores.com/i/centrepoint/166680251-166680251-310524_01-2100.jpg?v=1",
+        "title": "Lamborghini Solid Backpack with Adjustable Straps and Zip Closure - 16 inches",
+        "typeEn": "Backpacks",
+        "brand": "Lamborghini",
+        "material": "Polyester",
+        "product_type": "school-bagsandbackpacks-backpacks"
+      },
+      {
+        "id": 166680416,
+        "image_link": "https://media.centrepointstores.com/i/centrepoint/166680416-166680416-310524_01-2100.jpg?v=1",
+        "title": "Frozen Print 2-Compartment Pencil Pouch with Zip Closure",
+        "typeEn": "Pencil Cases",
+        "brand": "Disney",
+        "material": "Polyester",
+        "product_type": "school-stationery-pencilcases"
+      },
+      {
+        "id": 166680455,
+        "image_link": "https://media.centrepointstores.com/i/centrepoint/166680455-166680455-310524_01-2100.jpg?v=1",
+        "title": "Juniors Fairy Embossed Trolley Backpack with Wheels and Retractable Handle - 14 inches",
+        "typeEn": "Trolley Bags",
+        "brand": "Juniors",
+        "material": "Polyester Blend",
+        "product_type": "school-bagsandbackpacks-trolleybags"
+      },
+      {
+        "id": 166680399,
+        "image_link": "https://media.centrepointstores.com/i/centrepoint/166680399-166680399-310524_01-2100.jpg?v=2",
+        "title": "All-Over Batman Print Backpack with Adjustable Shoulder Straps and Zip Closure - 18 inches",
+        "typeEn": "Backpacks",
+        "brand": "Warner Bros",
+        "material": "Polyester",
+        "product_type": "school-bagsandbackpacks-backpacks"
+      },
+      {
+        "id": 166680167,
+        "image_link": "https://media.centrepointstores.com/i/centrepoint/166680167-166680167-030624_01-2100.jpg?v=1",
+        "title": "NBA Solid Trolley Bag with Retractable Handle and Zip Closure - 18 inches",
+        "typeEn": "Trolley Bags",
+        "brand": "NBA",
+        "material": "Polyester",
+        "product_type": "school-bagsandbackpacks-trolleybags"
+      },
+      {
+        "id": 166680197,
+        "image_link": "https://media.centrepointstores.com/i/centrepoint/166680197-166680197-310524_01-2100.jpg?v=2",
+        "title": "My Little Pony Print Trolley Backpack with Retractable Handle and Adjustable Straps -16 inches",
+        "typeEn": "Trolley Bags",
+        "brand": "My Little Pony",
+        "material": "Polyester",
+        "product_type": "school-bagsandbackpacks-trolleybags"
+      },
+      {
+        "id": 166680248,
+        "image_link": "https://media.centrepointstores.com/i/centrepoint/166680248-166680248-310524_01-2100.jpg?v=2",
+        "title": "Lamborghini Printed Trolley Backpack with Retractable Handle and Zip Closure - 18 inches",
+        "typeEn": "Trolley Bags",
+        "brand": "Lamborghini",
+        "material": "Polyester",
+        "product_type": "school-bagsandbackpacks-trolleybags"
+      },
+      {
+        "id": 166687272,
+        "image_link": "https://media.centrepointstores.com/i/centrepoint/166687272-166687272-030624_01-2100.jpg?v=1",
+        "title": "Ferrari Logo Applique Backpack with Adjustable Shoulder Straps and Zip Closure - 16 inches",
+        "typeEn": "Backpacks",
+        "brand": "Ferrari",
+        "material": "Polyester",
+        "product_type": "school-bagsandbackpacks-backpacks"
+      },
+      {
+        "id": 166687218,
+        "image_link": "https://media.centrepointstores.com/i/centrepoint/166687218-166687218-310524_01-2100.jpg?v=1",
+        "title": "BT21 Printed Backpack with Adjustable Straps and Zip Closure - 16 inches",
+        "typeEn": "Backpacks",
+        "brand": "BT21",
+        "material": "Polyester",
+        "product_type": "school-bagsandbackpacks-backpacks"
+      },
+      {
+        "id": 166687221,
+        "image_link": "https://media.centrepointstores.com/i/centrepoint/166687221-166687221-030624_01-2100.jpg?v=1",
+        "title": "BT21 Printed Backpack with Shoulder Straps - 18 inches",
+        "typeEn": "Backpacks",
+        "brand": "BT21",
+        "material": "Polyester",
+        "product_type": "school-bagsandbackpacks-backpacks"
+      },
+      {
+        "id": 166687217,
+        "image_link": "https://media.centrepointstores.com/i/centrepoint/166687217-166687217-310524_01-2100.jpg",
+        "title": "BT21 Print Backpack with Adjustable Straps and Zip Closure - 16 inch",
+        "typeEn": "Backpacks",
+        "brand": "BT21",
+        "material": "Polyester",
+        "product_type": "school-bagsandbackpacks-backpacks"
+      },
+      {
+        "id": 166687142,
+        "image_link": "https://media.centrepointstores.com/i/centrepoint/166687142-166687142-310524_01-2100.jpg?v=1",
+        "title": "Juniors Solid Backpack with Adjustable Straps and Zip Closure - 16 inches",
+        "typeEn": "Backpacks",
+        "brand": "Juniors",
+        "material": "Polyester",
+        "product_type": "school-bagsandbackpacks-backpacks"
+      },
+      {
+        "id": 166687043,
+        "image_link": "https://media.centrepointstores.com/i/centrepoint/166687043-166687043-310524_01-2100.jpg?v=1",
+        "title": "Juniors Floral Print Trolley Backpack with Adjustable Shoulder Straps - 16 inches",
+        "typeEn": "Trolley Bags",
+        "brand": "Juniors",
+        "material": "Polyester",
+        "product_type": "school-bagsandbackpacks-trolleybags"
+      },
+      {
+        "id": 166687038,
+        "image_link": "https://media.centrepointstores.com/i/centrepoint/166687038-166687038-310524_01-2100.jpg?v=2",
+        "title": "Juniors Floral Print Trolley Backpack with Adjustable Shoulder Straps - 14 inches",
+        "typeEn": "Trolley Bags",
+        "brand": "Juniors",
+        "material": "Polyester",
+        "product_type": "school-bagsandbackpacks-trolleybags"
+      },
+      {
+        "id": 166698648,
+        "image_link": "https://media.centrepointstores.com/i/centrepoint/166698648-166698648-310524_01-2100.jpg?v=1",
+        "title": "Juniors Colourblock Pencil Pouch with Zip Closure",
+        "typeEn": "Pencil Cases",
+        "brand": "Juniors",
+        "material": "Polyester",
+        "product_type": "school-stationery-pencilcases"
+      },
+      {
+        "id": 166698643,
+        "image_link": "https://media.centrepointstores.com/i/centrepoint/166698643-166698643-310524_01-2100.jpg?v=1",
+        "title": "Juniors Bear Print Pencil Pouch with Zip Closure",
+        "typeEn": "Pencil Cases",
+        "brand": "Juniors",
+        "material": "Polyester",
+        "product_type": "school-stationery-pencilcases"
+      },
+      {
+        "id": 166698650,
+        "image_link": "https://media.centrepointstores.com/i/centrepoint/166698650-166698650-310524_01-2100.jpg?v=1",
+        "title": "Juniors Graphic Print Backpack with Zip Closure and Adjustable Shoulder Straps - 18 inches",
+        "typeEn": "Backpacks",
+        "brand": "Juniors",
+        "material": "Polyester",
+        "product_type": "school-bagsandbackpacks-backpacks"
+      },
+      {
+        "id": 166698639,
+        "image_link": "https://media.centrepointstores.com/i/centrepoint/166698639-166698639-310524_01-2100.jpg?v=1",
+        "title": "Juniors Bear Print Backpack with Adjustable Shoulder Straps - 18 inches",
+        "typeEn": "Backpacks",
+        "brand": "Juniors",
+        "material": "Polyester",
+        "product_type": "school-bagsandbackpacks-backpacks"
+      },
+      {
+        "id": 166698649,
+        "image_link": "https://media.centrepointstores.com/i/centrepoint/166698649-166698649-310524_01-2100.jpg?v=1",
+        "title": "Juniors Graphic Print Backpack with Zip Closure and Laptop Compartment - 18 inches",
+        "typeEn": "Backpacks",
+        "brand": "Juniors",
+        "material": "Polyester",
+        "product_type": "school-bagsandbackpacks-backpacks"
+      },
+      {
+        "id": 166698644,
+        "image_link": "https://media.centrepointstores.com/i/centrepoint/166698644-166698644-310524_01-2100.jpg?v=1",
+        "title": "Juniors Panelled Backpack with Adjustable Straps and Zip Closure - 18 inches",
+        "typeEn": "Backpacks",
+        "brand": "Juniors",
+        "material": "Polyester",
+        "product_type": "school-bagsandbackpacks-backpacks"
+      },
+      {
+        "id": 166698653,
+        "image_link": "https://media.centrepointstores.com/i/centrepoint/166698653-166698653-310524_01-2100.jpg?v=1",
+        "title": "Juniors Graphic Print Pencil Pouch with Zip Closure",
+        "typeEn": "Pencil Cases",
+        "brand": "Juniors",
+        "material": "Polyester",
+        "product_type": "school-stationery-pencilcases"
+      },
+      {
+        "id": 166694174,
+        "image_link": "https://media.centrepointstores.com/i/centrepoint/166694174-166694174-310524_01-2100.jpg?v=1",
+        "title": "Disney Frozen Print Pencil Pouch with Zip Closure",
+        "typeEn": "Pencil Cases",
+        "brand": "Disney",
+        "material": "Polyester",
+        "product_type": "school-stationery-pencilcases"
+      },
+      {
+        "id": 166694164,
+        "image_link": "https://media.centrepointstores.com/i/centrepoint/166694164-166694164-310524_01-2100.jpg?v=1",
+        "title": "Disney Princess Print Pencil Pouch with Zip Closure",
+        "typeEn": "Pencil Cases",
+        "brand": "Disney",
+        "material": "Polyester",
+        "product_type": "school-stationery-pencilcases"
+      },
+      {
+        "id": 166694162,
+        "image_link": "https://media.centrepointstores.com/i/centrepoint/166694162-166694162-310524_01-2100.jpg?v=1",
+        "title": "Disney Princess Print Trolley Bag with Retractable Handle and Zip Closure - 14 inches",
+        "typeEn": "Trolley Bags",
+        "brand": "Disney",
+        "material": "Polyester",
+        "product_type": "school-bagsandbackpacks-trolleybags"
+      },
+      {
+        "id": 166778027,
+        "image_link": "https://media.centrepointstores.com/i/centrepoint/166778027-166778027-310524_01-2100.jpg?v=1",
+        "title": "Juniors Dinosaur Print Backpack with Zip Closure and Adjustable Shoulder Straps - 14 inches",
+        "typeEn": "Backpacks",
+        "brand": "Juniors",
+        "material": "Polyester",
+        "product_type": "school-bagsandbackpacks-backpacks"
+      },
+      {
+        "id": 166784477,
+        "image_link": "https://media.centrepointstores.com/i/centrepoint/166784477-166784477-310524_01-2100.jpg?v=3",
+        "title": "Juniors Solid Backpack with Adjustable Shoulder Straps and Zip Closure - 14 inches",
+        "typeEn": "Backpacks",
+        "brand": "Juniors",
+        "material": "Polyester",
+        "product_type": "school-bagsandbackpacks-backpacks"
+      },
+      {
+        "id": 166778032,
+        "image_link": "https://media.centrepointstores.com/i/centrepoint/166778032-166778032-310524_01-2100.jpg?v=1",
+        "title": "Juniors All-Over Print Trolley Backpack with Retractable Handle and Zip Closure - 14 inches",
+        "typeEn": "Trolley Bags",
+        "brand": "Juniors",
+        "material": "Polyester",
+        "product_type": "school-bagsandbackpacks-trolleybags"
+      },
+      {
+        "id": 166785212,
+        "image_link": "https://media.centrepointstores.com/i/centrepoint/166785212-166785212-310524_01-2100.jpg?v=2",
+        "title": "Juniors Graphic Print 12-inch Backpack with Lunch Bag and Pencil Pouch",
+        "typeEn": "Sets",
+        "brand": "Juniors",
+        "material": "Polyester",
+        "product_type": "school-bagsandbackpacks-sets"
+      },
+      {
+        "id": 166790975,
+        "image_link": "https://media.centrepointstores.com/i/centrepoint/166790975-166790975-310524_01-2100.jpg?v=1",
+        "title": "Juniors Checked Backpack with Adjustable Shoulder Straps and Zip Closure - 17 inches",
+        "typeEn": "Backpacks",
+        "brand": "Juniors",
+        "material": "Polyester",
+        "product_type": "school-bagsandbackpacks-backpacks"
+      },
+      {
+        "id": 166790976,
+        "image_link": "https://media.centrepointstores.com/i/centrepoint/166790976-166790976-310524_01-2100.jpg?v=1",
+        "title": "Juniors Checked Backpack with Adjustable Shoulder Straps and Zip Closure - 17 inches",
+        "typeEn": "Backpacks",
+        "brand": "Juniors",
+        "material": "Polyester",
+        "product_type": "school-bagsandbackpacks-backpacks"
+      },
+      {
+        "id": 166785159,
+        "image_link": "https://media.centrepointstores.com/i/centrepoint/166785159-166785159-310524_01-2100.jpg?v=1",
+        "title": "Juniors Printed Backpack with Pencil Pouch - 18 inches",
+        "typeEn": "Backpacks",
+        "brand": "Juniors",
+        "material": "Polyester",
+        "product_type": "school-bagsandbackpacks-backpacks"
+      },
+      {
+        "id": 166804052,
+        "image_link": "https://media.centrepointstores.com/i/centrepoint/166804052-166804052-310524_01-2100.jpg?v=1",
+        "title": "Kappa Logo Print Backpack with Laptop Compartment and Adjustable Straps - 16 inches",
+        "typeEn": "Backpacks",
+        "brand": "Kappa",
+        "material": "Polyester",
+        "product_type": "school-bagsandbackpacks-backpacks"
       }
     ],
     "Accessories": [
@@ -4684,6 +6180,88 @@
         "image_link": "https://media.centrepointstores.com/i/centrepoint/RD3139MulticolourC-SHADE-RD3139-BSRG280818_01-2100.jpg?v=2",
         "title": "Juniors Textured Socks",
         "brand": "Juniors",
+        "material": "Cotton Blend",
+        "product_type": "baby-boys-accessories-socks"
+      },
+      {
+        "id": "NY481-004MCMS",
+        "image_link": "https://media.centrepointstores.com/i/centrepoint/NY481-004MCMS-NY481-004-BSRG300920_01-2100.jpg?v=2",
+        "title": "Juniors Solid Ankle Length Socks - Set of 3",
+        "typeEn": "Socks",
+        "brand": "Juniors",
+        "material": "Cotton Blend",
+        "product_type": "boys-accessories-socks"
+      },
+      {
+        "id": "RD3007REDC-shade",
+        "image_link": "https://media.centrepointstores.com/i/centrepoint/RD3007REDC-shade-RD3007-BA18BS032718_01-2100.jpg?v=2",
+        "title": "Juniors Socks with Rolled Cuffs",
+        "brand": "Juniors",
+        "material": "Cotton Blend",
+        "product_type": "baby-boys-accessories-socks"
+      },
+      {
+        "id": "NY381-002WHITELIGHT",
+        "image_link": "https://media.centrepointstores.com/i/centrepoint/NY381-002WHITELIGHT-NY381-002-BSRG300920_01-2100.jpg?v=5",
+        "title": "Juniors Solid Socks - Set of 3",
+        "brand": "Juniors",
+        "material": "Cotton Blend",
+        "product_type": "baby-boys-accessories-socks"
+      },
+      {
+        "id": "RD3138BlueC-SHADE",
+        "image_link": "https://media.centrepointstores.com/i/centrepoint/RD3138BlueC-SHADE-RD3138-BSRG280818_01-2100.jpg?v=2",
+        "title": "Juniors Textured Socks",
+        "brand": "Juniors",
+        "material": "Cotton Blend",
+        "product_type": "baby-boys-accessories-socks"
+      },
+      {
+        "id": "RD3006BLUEC-shade",
+        "image_link": "https://media.centrepointstores.com/i/centrepoint/RD3006BLUEC-shade-RD3006-BA18BS032718_01-2100.jpg?v=2",
+        "title": "Juniors Socks with Rolled Cuffs",
+        "brand": "Juniors",
+        "material": "Cotton Blend",
+        "product_type": "baby-boys-accessories-socks"
+      },
+      {
+        "id": "RD3128multicolorC-shade",
+        "image_link": "https://media.centrepointstores.com/i/centrepoint/RD3128multicolorC-shade-RD3128-BA18BS032718_01-2100.jpg?v=3",
+        "title": "Juniors Textured Socks",
+        "brand": "Juniors",
+        "material": "Cotton Blend",
+        "product_type": "baby-boys-accessories-socks"
+      },
+      {
+        "id": "NY481-007WHITELIGHT",
+        "image_link": "https://media.centrepointstores.com/i/centrepoint/NY481-007WHITELIGHT-NY481-007-BSRG22079_01-2100.jpg?v=1",
+        "title": "Juniors Solid Ankle Socks - Set of 3",
+        "typeEn": "Socks",
+        "brand": "Juniors",
+        "material": "Cotton Blend",
+        "product_type": "boys-accessories-socks"
+      },
+      {
+        "id": "NY381-007WHITELIGHT",
+        "image_link": "https://media.centrepointstores.com/i/centrepoint/NY381-007WHITELIGHT-NY381-007-BSRG300920_01-2100.jpg?v=3",
+        "title": "Juniors Solid Ankle Length Trainer Socks - Set of 3",
+        "brand": "Juniors",
+        "material": "Cotton Blend",
+        "product_type": "baby-boys-accessories-socks"
+      },
+      {
+        "id": "NY381-008BLACKDARK",
+        "image_link": "https://media.centrepointstores.com/i/centrepoint/NY381-008BLACKDARK-NY381-008-BSRG300920_01-2100.jpg?v=2",
+        "title": "Juniors Solid Ankle Length Socks - Pair of 3",
+        "brand": "Juniors",
+        "material": "Cotton Blend",
+        "product_type": "baby-boys-accessories-socks"
+      },
+      {
+        "id": "Z52-A7-32-004MCMS",
+        "image_link": "https://media.centrepointstores.com/i/centrepoint/Z52-A7-32-004MCMS-Z52-A7-32-004-SS21170221_01-2100.jpg?v=1",
+        "title": "Gloo Solid Ankle-Length Socks with Cuffed Hem - Pack of 5",
+        "brand": "Gloo",
         "material": "Cotton Blend",
         "product_type": "baby-boys-accessories-socks"
       }
@@ -5090,11 +6668,108 @@
         "department": "Home",
         "material": "Polyester",
         "product_type": "travel-luggagesandbags-dufflebags"
+      },
+      {
+        "id": 166662789,
+        "image_link": "https://media.centrepointstores.com/i/centrepoint/166662789-166662786-SMASM24090624_01-2100.jpg",
+        "title": "Kappa Logo Embroidered Duffel Bag with Double Handle and Zip Closure",
+        "typeEn": "Duffle Bags",
+        "brand": "Kappa",
+        "department": "Home",
+        "material": "Polyester",
+        "product_type": "travel-luggagesandbags-dufflebags"
+      },
+      {
+        "id": "CENSUS-20GREY",
+        "image_link": "https://media.centrepointstores.com/i/centrepoint/CENSUS-20GREY-CENSUS-20-SMASM24110724_01-2100.jpg",
+        "title": "IT Textured Softcase Trolley Bag with Retractable Handle - 20 inches",
+        "typeEn": "Luggage",
+        "brand": "IT",
+        "department": "Home",
+        "material": "Polyester",
+        "product_type": "travel-luggagesandbags-luggage"
+      },
+      {
+        "id": "CENSUS-20PINK",
+        "image_link": "https://media.centrepointstores.com/i/centrepoint/CENSUS-20PINK-CENSUS-20-SMASM24110724_01-2100.jpg",
+        "title": "IT Textured Softcase Trolley Bag with Retractable Handle - 20 inches",
+        "typeEn": "Luggage",
+        "brand": "IT",
+        "department": "Home",
+        "material": "Polyester",
+        "product_type": "travel-luggagesandbags-luggage"
+      },
+      {
+        "id": "CENSUS-24GREY",
+        "image_link": "https://media.centrepointstores.com/i/centrepoint/CENSUS-24GREY-CENSUS-24-SMASM24110724_01-2100.jpg",
+        "title": "IT Textured Softcase Trolley Bag with Retractable Handle - 24 inches",
+        "typeEn": "Luggage",
+        "brand": "IT",
+        "department": "Home",
+        "material": "Polyester",
+        "product_type": "travel-luggagesandbags-luggage"
+      },
+      {
+        "id": "CENSUS-24PINK",
+        "image_link": "https://media.centrepointstores.com/i/centrepoint/CENSUS-24PINK-CENSUS-24-SMASM24110724_01-2100.jpg",
+        "title": "IT Textured Softcase Trolley Bag with Retractable Handle - 24 inches",
+        "typeEn": "Luggage",
+        "brand": "IT",
+        "department": "Home",
+        "material": "Polyester",
+        "product_type": "travel-luggagesandbags-luggage"
+      },
+      {
+        "id": 166664536,
+        "image_link": "https://media.centrepointstores.com/i/centrepoint/166664536-166664535-SMASM24160724_01-2100.jpg",
+        "title": "WAVE Solid Duffle Bag with Detachable Strap and Zip Closure",
+        "typeEn": "Duffle Bags",
+        "brand": "WAVE",
+        "department": "Home",
+        "material": "Nylon",
+        "product_type": "travel-luggagesandbags-dufflebags"
+      },
+      {
+        "id": 166664537,
+        "image_link": "https://media.centrepointstores.com/i/centrepoint/166664537-166664535-SMASM24160724_01-2100.jpg",
+        "title": "WAVE Solid Duffle Bag with Detachable Strap and Zip Closure",
+        "typeEn": "Duffle Bags",
+        "brand": "WAVE",
+        "department": "Home",
+        "material": "Nylon",
+        "product_type": "travel-luggagesandbags-dufflebags"
+      },
+      {
+        "id": 166664534,
+        "image_link": "https://media.centrepointstores.com/i/centrepoint/166664534-166664533-SMASM24160724_01-2100.jpg",
+        "title": "WAVE Solid Duffle Bag with Detachable Strap and Zip Closure",
+        "typeEn": "Duffle Bags",
+        "brand": "WAVE",
+        "department": "Home",
+        "material": "PU",
+        "product_type": "travel-luggagesandbags-dufflebags"
+      },
+      {
+        "id": "PORTOX-CABINBLACK",
+        "image_link": "https://media.centrepointstores.com/i/centrepoint/PORTOX-CABINBLACK-PORTOX-CABIN-SMASM24261223_01-2100.jpg",
+        "title": "WAVE Textured Hardcase Trolley Bag with Retractable Handle",
+        "typeEn": "Luggage",
+        "brand": "WAVE",
+        "department": "Home",
+        "material": "Polycarbonate with ABS",
+        "product_type": "travel-luggagesandbags-luggage"
+      },
+      {
+        "id": "PORTOX-CABINPINK",
+        "image_link": "https://media.centrepointstores.com/i/centrepoint/PORTOX-CABINPINK-PORTOX-CABIN-SMASM24261223_01-2100.jpg",
+        "title": "WAVE Textured Hardcase Trolley Bag with Retractable Handle",
+        "typeEn": "Luggage",
+        "brand": "WAVE",
+        "department": "Home",
+        "material": "Polycarbonate with ABS",
+        "product_type": "travel-luggagesandbags-luggage"
       }
-    ],
-    "Furnishings": [],
-    "Décor": [],
-    "Kitchen & Dining": []
+    ]
   },
   "Beauty": {
     "Makeup": [
@@ -5138,14 +6813,7 @@
         "brand": "Lifestyle",
         "product_type": "cpbeauty-makeupaccessories-cosmeticcasesandbags"
       }
-    ],
-    "Skincare": [],
-    "Haircare": [],
-    "Fragrance": []
+    ]
   },
-  "Sports": {
-    "Sportswear": [],
-    "Footwear": [],
-    "Equipment": []
-  }
+  "Sports": {}
 }
